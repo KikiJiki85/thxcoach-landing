@@ -435,7 +435,7 @@ img {
   box-sizing: border-box;
   scroll-behavior: smooth;
   background-color: #BFFF00;
-  background-image: url("/assets/img/landing-bcg.png");
+  background-image: url("../assets/img/landing-bcg.png");
   width: 100%;
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -460,13 +460,13 @@ img {
 
 @media (max-width: 991px) {
   .landing {
-    background-image: url("/assets/img/landing-bcg-tablet.png");
+    background-image: url("../assets/img/landing-bcg-tablet.png");
     background-position: right bottom;
   }
 }
 @media (max-width: 767px) {
   .landing {
-    background-image: url("/assets/img/landing-bcg-mobile.png");
+    background-image: url("../assets/img/landing-bcg-mobile.png");
     background-position: right top;
   }
 }
