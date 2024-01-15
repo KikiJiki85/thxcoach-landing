@@ -564,6 +564,10 @@ img {
   .landing-main__additional-info {
     margin-top: 112px;
   }
+  .landing-main__apps-wrapper {
+    flex-direction: column;
+    gap: 15px;
+  }
 }
 @media (max-width: 419px) {
   .landing-main {
@@ -584,10 +588,6 @@ img {
   }
   .landing-main__additional-info {
     margin-top: 95px;
-  }
-  .landing-main__apps-wrapper {
-    flex-direction: column;
-    gap: 15px;
   }
 }
 .landing-footer {

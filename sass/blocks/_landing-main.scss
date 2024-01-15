@@ -64,6 +64,11 @@
     &__additional-info {
       margin-top: 112px;
     }
+
+    &__apps-wrapper {
+      flex-direction: column;
+      gap: 15px;
+    }
   }
 }
 
@@ -89,11 +94,6 @@
 
     &__additional-info {
       margin-top: 95px;
-    }
-
-    &__apps-wrapper {
-      flex-direction: column;
-      gap: 15px;
     }
   }
 }
