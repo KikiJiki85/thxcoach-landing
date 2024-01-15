@@ -1,0 +1,53 @@
+.landing-footer {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-bottom: 40px;
+
+  &__tech-info,
+  &__copyright {
+    margin: 0;
+  }
+
+  &__tech-info,
+  &__linkedin,
+  &__email {
+    font-weight: 500;
+  }
+
+  &__linkedin,
+  &__email {
+    color: $font-color-primary;
+  }
+}
+
+@media (max-width: 1199px) {
+  .landing-footer {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+}
+
+@media (max-width: 991px) {
+  .landing-footer {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .landing-footer {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+}
+
+@media (max-width: 419px) {
+  .landing-footer {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}

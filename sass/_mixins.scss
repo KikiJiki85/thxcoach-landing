@@ -1,0 +1,72 @@
+@mixin list-reset {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin hover-effect {
+    transition: opacity 0.5s;
+
+
+    @media (hover: hover) {
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+
+@mixin block-decor {
+    background-color: #ffffff;
+    border-radius: 24px;
+    box-shadow: 0px 0px 30px 0px rgba(193, 193, 193, 0.40);
+    transition: all 0.3s;
+
+    @media (hover: hover) {
+
+        &:not(.schedule):hover {
+            box-shadow: 0px 0px 30px 0px rgba(193, 193, 193, 0.60);
+        }
+    }
+
+    &:has(.close-block:active) {
+        transform: scale(0.95);
+    }
+
+}
+
+@mixin block-decor-no-hover {
+    background-color: #ffffff;
+    border-radius: 24px;
+    box-shadow: 0px 0px 30px 0px rgba(193, 193, 193, 0.40);
+    transition: all 0.3s;
+
+    &:has(.close-block:active) {
+        transform: scale(0.95);
+    }
+
+}
+
+@mixin close-decor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 12px;
+    top: 11px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: all 0.5s;
+
+    @media (hover: hover) {
+
+        &:hover {
+            .close-icon {
+                fill-opacity: 1;
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.landing-header {
+  z-index: 15;
+  display: flex;
+  justify-content: space-between;
+  background-color: $bg-primary;
+  padding: 23px 120px;
+
+  &__left-side {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1199px) {
+  .landing-header {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+}
+
+@media (max-width: 991px) {
+  .landing-header {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .landing-header {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+}
+
+@media (max-width: 419px) {
+  .landing-header {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}

@@ -1,0 +1,41 @@
+.landing {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background-color: $bg-primary;
+  background-image: url("/assets/img/landing-bcg.png");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+
+  &__container {
+    margin: 0 auto;
+    font-family: $main-font, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: $font-color-primary;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    min-height: 100vh;
+    width: 100%;
+    align-content: start;
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 991px) {
+  .landing {
+    background-image: url("/assets/img/landing-bcg-tablet.png");
+    background-position: right bottom;
+  }
+}
+
+@media (max-width: 767px) {
+  .landing {
+    background-image: url("/assets/img/landing-bcg-mobile.png");
+    background-position: right top;
+  }
+}
