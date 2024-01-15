@@ -2,7 +2,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   background-color: $bg-primary;
-  background-image: url("../assets/img/landing-bcg-1200.png");
+  background-image: url("../assets/img/landing-bcg-1200.webp");
   background-size: 1140px 1104px;
   width: 100%;
   background-repeat: no-repeat;
@@ -28,7 +28,7 @@
 
 @media (max-width: 1199px) {
   .landing {
-    background-image: url("../assets/img/landing-bcg-1199.png");
+    background-image: url("../assets/img/landing-bcg-1199.webp");
     background-position: right bottom;
     background-size: 673px 1104px;
   }
@@ -36,14 +36,14 @@
 
 @media (max-width: 991px) {
   .landing {
-    background-image: url("../assets/img/landing-bcg-991.png");
+    background-image: url("../assets/img/landing-bcg-991.webp");
     background-size: 524px 1104px;
   }
 }
 
 @media (max-width: 767px) {
   .landing {
-    background-image: url("../assets/img/landing-bcg-767.png");
+    background-image: url("../assets/img/landing-bcg-767.webp");
     background-position: right top;
     background-size: 450px 673px;
   }
@@ -51,7 +51,7 @@
 
 @media (max-width: 420px) {
   .landing {
-    background-image: url("../assets/img/landing-bcg-420.png");
+    background-image: url("../assets/img/landing-bcg-420.webp");
     background-size: 211px 456px;
   }
 }
