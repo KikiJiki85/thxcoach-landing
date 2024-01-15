@@ -435,11 +435,11 @@ img {
   box-sizing: border-box;
   scroll-behavior: smooth;
   background-color: #BFFF00;
-  background-image: url("../assets/img/landing-bcg.png");
+  background-image: url("../assets/img/landing-bcg-1200.png");
+  background-size: 1140px 1104px;
   width: 100%;
   background-repeat: no-repeat;
   background-position: right bottom;
-  background-size: contain;
 }
 .landing__container {
   margin: 0 auto;
@@ -458,16 +458,30 @@ img {
   overflow: hidden;
 }
 
+@media (max-width: 1199px) {
+  .landing {
+    background-image: url("../assets/img/landing-bcg-1199.png");
+    background-position: right bottom;
+    background-size: 673px 1104px;
+  }
+}
 @media (max-width: 991px) {
   .landing {
-    background-image: url("../assets/img/landing-bcg-tablet.png");
-    background-position: right bottom;
+    background-image: url("../assets/img/landing-bcg-991.png");
+    background-size: 524px 1104px;
   }
 }
 @media (max-width: 767px) {
   .landing {
-    background-image: url("../assets/img/landing-bcg-mobile.png");
+    background-image: url("../assets/img/landing-bcg-767.png");
     background-position: right top;
+    background-size: 450px 673px;
+  }
+}
+@media (max-width: 420px) {
+  .landing {
+    background-image: url("../assets/img/landing-bcg-420.png");
+    background-size: 211px 456px;
   }
 }
 .landing-header {
