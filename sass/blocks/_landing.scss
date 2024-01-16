@@ -3,7 +3,7 @@
   scroll-behavior: smooth;
   background-color: $bg-primary;
   background-image: url("../assets/img/landing-bcg-1200.webp");
-  background-size: 1140px 1104px;
+  background-size: 939px 1756px;
   width: 100%;
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -30,7 +30,7 @@
   .landing {
     background-image: url("../assets/img/landing-bcg-1199.webp");
     background-position: right bottom;
-    background-size: 673px 1104px;
+    background-size: 903px 1104px;
   }
 }
 
@@ -45,13 +45,13 @@
   .landing {
     background-image: url("../assets/img/landing-bcg-767.webp");
     background-position: right top;
-    background-size: 450px 673px;
+    background-size: 387px 854px;
   }
 }
 
 @media (max-width: 420px) {
   .landing {
     background-image: url("../assets/img/landing-bcg-420.webp");
-    background-size: 211px 456px;
+    background-size: 207px 518px;
   }
 }

@@ -1,6 +1,7 @@
 .landing-main {
   padding-left: 120px;
   padding-right: 120px;
+  width: 50%;
 
   &__cta {
     font-size: 40px;
@@ -40,6 +41,7 @@
 
 @media (max-width: 1199px) {
   .landing-main {
+    width: 55%;
     padding-right: 60px;
     padding-left: 60px;
   }
@@ -47,6 +49,7 @@
 
 @media (max-width: 991px) {
   .landing-main {
+    width: 60%;
     padding-right: 40px;
     padding-left: 40px;
   }
@@ -76,6 +79,7 @@
   .landing-main {
     padding-right: 16px;
     padding-left: 16px;
+    width: 65%;
 
     &__cta {
       font-size: 26px;
