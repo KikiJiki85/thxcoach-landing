@@ -23,7 +23,8 @@
     position: absolute;
     right: 120px;
     cursor: pointer;
-    height: 48px;
+    height: 50px;
+    width: 70px;
     transition: height 0.5s;
 
     &--active {
@@ -31,8 +32,7 @@
     }
   }
 
-  &__link-en,
-  &__link-fi {
+  &__link {
     font-size: 16px;
     font-weight: 600;
     line-height: 22px;
@@ -40,11 +40,13 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 4px;
+    gap: 5px;
     user-select: none;
+    width: 100%;
+    justify-content: space-between;
   }
 
-  &__link-fi {
+  &__link-second {
     position: absolute;
     top: 44px;
     opacity: 0;
@@ -57,10 +59,23 @@
       width: 37px;
     }
   }
+
+  &__arrow {
+    min-height: 6px;
+    min-width: 11px;
+    transition: all 0.5s;
+
+    &--rotate {
+      transform: rotate(180deg);
+    }
+  }
 }
 
 @media (max-width: 1199px) {
   .landing-header {
+    &__right-side {
+      right: 60px;
+    }
     padding-right: 60px;
     padding-left: 60px;
   }
@@ -68,6 +83,10 @@
 
 @media (max-width: 991px) {
   .landing-header {
+    &__right-side {
+      right: 40px;
+    }
+
     padding-right: 40px;
     padding-left: 40px;
   }
@@ -75,6 +94,10 @@
 
 @media (max-width: 767px) {
   .landing-header {
+    &__right-side {
+      right: 32px;
+    }
+
     padding-right: 32px;
     padding-left: 32px;
   }
@@ -82,6 +105,10 @@
 
 @media (max-width: 419px) {
   .landing-header {
+    &__right-side {
+      right: 16px;
+    }
+
     padding-right: 16px;
     padding-left: 16px;
   }

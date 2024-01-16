@@ -1,11 +1,11 @@
 function init() {
   const languageSwitch = document.querySelector(".landing-header__right-side");
-  const languageFi = document.querySelector(".landing-header__link-fi");
-  const languageEn = document.querySelector(".landing-header__link-en");
+  const linkSecond = document.querySelector(".landing-header__link-second");
+  const arrow = document.querySelector(".landing-header__arrow");
   languageSwitch.addEventListener("click", () => {
-    languageFi.classList.toggle("landing-header__link-fi--active");
-    languageEn.classList.toggle("landing-header__link-en--active");
+    linkSecond.classList.toggle("landing-header__link-second--active");
     languageSwitch.classList.toggle("landing-header__right-side--active");
+    arrow.classList.toggle("landing-header__arrow--rotate");
   });
 }
 
