@@ -1000,11 +1000,11 @@ img {
 .sign-up__trigger {
   width: 16px;
   height: 16px;
-  background-image: url("/assets/img/radio-off.svg");
+  background-image: url("../assets/img/radio-off.svg");
   background-repeat: no-repeat;
 }
 .sign-up .sign-up__checkbox:not(:disabled):checked + label .sign-up__trigger {
-  background-image: url("/assets/img/radio-on.svg");
+  background-image: url("../assets/img/radio-on.svg");
 }
 
 @media (max-width: 767px) {
@@ -1138,11 +1138,11 @@ img {
 .sign-up-2__trigger {
   width: 16px;
   height: 16px;
-  background-image: url("/assets/img/radio-off.svg");
+  background-image: url("../assets/img/radio-off.svg");
   background-repeat: no-repeat;
 }
 .sign-up-2 .sign-up-2__checkbox:not(:disabled):checked + label .sign-up-2__trigger {
-  background-image: url("/assets/img/radio-on.svg");
+  background-image: url("../assets/img/radio-on.svg");
 }
 .sign-up-2__details-list {
   list-style: none;
