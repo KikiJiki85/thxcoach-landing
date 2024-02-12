@@ -1,0 +1,116 @@
+.btn {
+  padding: 13px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+  background: $bg-dark-grey;
+  color: $font-color-fifth;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.5s;
+
+  &__landing {
+    padding-right: 32px;
+    padding-left: 32px;
+
+    &--second {
+      background-color: transparent;
+      color: $font-color-primary;
+      border: 1px solid $bg-dark-grey;
+    }
+  }
+
+  &--white {
+    background-color: $bg-main;
+    color: $font-color-primary;
+    border: 1px solid $bg-dark-grey;
+    @media (hover: hover) {
+      &:hover {
+        color: $font-color-fifth;
+        background-color: $bg-dark-grey;
+      }
+    }
+  }
+
+  &--red {
+    color: $font-color-sixth;
+    background-color: transparent;
+    border: 1px solid $font-color-sixth;
+
+    @media (hover: hover) {
+      &:hover {
+        color: $font-color-fifth;
+        background-color: $font-color-sixth;
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    &:hover:not(.btn--red) {
+      opacity: 0.8;
+    }
+  }
+
+  &__close,
+  &__back {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: transparent;
+
+    &--path {
+      transition: all 0.5s;
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        .btn__close--path {
+          fill-opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__range {
+    border-radius: 24px;
+    background: $bg-super-light-grey;
+    display: flex;
+    width: 62px;
+    height: 22px;
+    padding: 0px 16px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__filter {
+    padding: 8px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    background-color: transparent;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    min-width: 50%;
+    color: $font-color-primary;
+
+    &--active {
+      color: $font-color-fifth;
+      background-color: $bg-dark-grey;
+    }
+  }
+}
