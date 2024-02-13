@@ -1090,6 +1090,8 @@ img {
   width: 100%;
   height: 100%;
   border: none;
+  outline: 0;
+  outline-offset: 0;
 }
 .sign-up-2__highlight {
   font-weight: 600;
