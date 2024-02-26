@@ -11,6 +11,13 @@ function init() {
   const signUpModal2 = document.querySelector(".sign-up-2");
   const signUpBackBtn = document.querySelector(".sign-up-2__back");
 
+  const signUp2CountryBtn = document.querySelector(".sign-up-2__country");
+  const signUpCountry = document.querySelector(".sign-up-country");
+  const signUpCountryBackBtn = document.querySelector(".sign-up-country__back");
+  const signUpCountryContinueBtn = document.querySelector(".sign-up-country__continue");
+
+  let pickedCountry = null;
+
   languageSwitch.addEventListener("click", () => {
     linkSecond.classList.toggle("landing-header__link-second--active");
     languageSwitch.classList.toggle("landing-header__language--active");
@@ -35,6 +42,29 @@ function init() {
 
   signUpBackBtn.addEventListener("click", () => {
     signUpModal2.classList.remove("sign-up-2--show");
+  });
+
+  signUp2CountryBtn.addEventListener("click", () => {
+    signUpCountry.classList.add("sign-up-country--show");
+  });
+
+  signUpCountryBackBtn.addEventListener("click", () => {
+    signUpCountry.classList.remove("sign-up-country--show");
+  });
+
+  signUpCountryContinueBtn.addEventListener("click", () => {
+    const countryCheckboxes = document.querySelectorAll(".sign-up-country__checkbox");
+    for (let radio of countryCheckboxes) {
+      if (radio.checked) {
+        pickedCountry = radio.id.charAt(0).toUpperCase() + radio.id.slice(1);
+        break;
+      }
+    }
+    const countryLabel = document.querySelector(".sign-up-2__country");
+    countryLabel.textContent = pickedCountry;
+    countryLabel.classList.add("sign-up-2__label--picked");
+
+    signUpCountry.classList.remove("sign-up-country--show");
   });
 }
 

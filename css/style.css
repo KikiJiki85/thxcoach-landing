@@ -1050,7 +1050,7 @@ img {
   font-weight: 600;
   line-height: 24px;
 }
-.sign-up-2__continue {
+.sign-up-2__sign-up {
   margin-right: 16px;
   margin-left: 16px;
   margin-top: auto;
@@ -1120,6 +1120,9 @@ img {
   line-height: 22px;
   transition: all 0.5s;
 }
+.sign-up-2__label--picked {
+  color: #293133;
+}
 @media (hover: hover) {
   .sign-up-2__label:hover {
     color: #293133;
@@ -1168,13 +1171,184 @@ img {
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
+  padding-left: 36px;
+  color: #797979;
   cursor: pointer;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.sign-up-2__text-small::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 1px solid rgba(80, 80, 80, 0.3);
+}
+.sign-up-2__input-checkbox:checked + .sign-up-2__text-small::after {
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+  background-image: url("/assets/img/checkbox-landing.svg");
+  background-repeat: no-repeat;
 }
 .sign-up-2__terms-link {
-  color: #293133;
+  color: #505050;
   text-decoration: underline;
 }
 .sign-up-2__terms-wrapper {
+  display: flex;
+  gap: 16px;
+}
+
+@media (max-width: 767px) {
+  .email-confirmation {
+    min-width: 428px;
+  }
+}
+@media (max-width: 428px) {
+  .email-confirmation {
+    min-width: 100%;
+  }
+}
+.sign-up-country {
+  position: fixed;
+  overflow-y: scroll;
+  z-index: 10;
+  top: 96px;
+  right: 0;
+  bottom: 0;
+  max-width: 460px;
+  min-width: 460px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  transform: translateX(100%);
+  transition: all 0.5s;
+  padding-bottom: 24px;
+}
+.sign-up-country--show {
+  transform: translateX(0%);
+}
+.sign-up-country__header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 16px;
+  border-bottom: 1px solid #f2f2f2;
+}
+.sign-up-country__header {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.sign-up-country__continue {
+  margin-right: 16px;
+  margin-left: 16px;
+  margin-top: auto;
+}
+.sign-up-country__back {
+  background-color: #f2f2f2;
+}
+.sign-up-country__crutch {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+}
+.sign-up-country__main-content {
+  max-width: 460px;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.sign-up-country__main-header {
+  margin: 0;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+}
+.sign-up-country__text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+}
+.sign-up-country__label {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  color: #293133;
+}
+.sign-up-country__trigger {
+  width: 16px;
+  height: 16px;
+  background-image: url("../assets/img/radio-off.svg");
+  background-repeat: no-repeat;
+}
+.sign-up-country .sign-up-country__checkbox:not(:disabled):checked + label .sign-up-country__trigger {
+  background-image: url("../assets/img/radio-on.svg");
+}
+.sign-up-country__select {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.sign-up-country__text-small {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  padding-left: 36px;
+  color: #797979;
+  cursor: pointer;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.sign-up-country__text-small::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 1px solid rgba(80, 80, 80, 0.3);
+}
+.sign-up-country__input-checkbox:checked + .sign-up-2__text-small::after {
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+  background-image: url("/assets/img/checkbox-landing.svg");
+  background-repeat: no-repeat;
+}
+.sign-up-country__terms-link {
+  color: #505050;
+  text-decoration: underline;
+}
+.sign-up-country__terms-wrapper {
   display: flex;
   gap: 16px;
 }
