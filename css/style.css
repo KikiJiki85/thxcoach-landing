@@ -508,11 +508,6 @@ img {
   box-sizing: border-box;
   scroll-behavior: smooth;
   background-color: #bfff00;
-  background-image: url("../assets/img/landing-bcg-1200.webp");
-  background-size: 939px 1756px;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: right bottom;
 }
 .landing__container {
   margin: 0 auto;
@@ -531,32 +526,6 @@ img {
   overflow: hidden;
 }
 
-@media (max-width: 1199px) {
-  .landing {
-    background-image: url("../assets/img/landing-bcg-1199.webp");
-    background-position: right bottom;
-    background-size: 616px 1385px;
-  }
-}
-@media (max-width: 991px) {
-  .landing {
-    background-image: url("../assets/img/landing-bcg-991.webp");
-    background-size: 524px 1104px;
-  }
-}
-@media (max-width: 767px) {
-  .landing {
-    background-image: url("../assets/img/landing-bcg-767.webp");
-    background-position: right top;
-    background-size: 387px 854px;
-  }
-}
-@media (max-width: 420px) {
-  .landing {
-    background-image: url("../assets/img/landing-bcg-420.webp");
-    background-size: 207px 518px;
-  }
-}
 .landing-header {
   z-index: 15;
   display: flex;
@@ -573,16 +542,26 @@ img {
   position: absolute;
   right: 120px;
   display: flex;
-  gap: 16px;
+  gap: 64px;
+}
+.landing-header__how-it-works, .landing-header__faqs {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #293133;
+  padding: 13px 0;
+}
+.landing-header__right-side-wrapper {
+  display: flex;
+  gap: 32px;
 }
 .landing-header__language {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 13px 16px;
-  background-color: #ffffff;
   border-radius: 24px;
-  border: 1px solid rgba(80, 80, 80, 0.3);
+  border: 1px solid #293133;
   gap: 10px;
   cursor: pointer;
   height: 50px;
@@ -594,6 +573,50 @@ img {
 }
 .landing-header__log-in, .landing-header__sign-up {
   align-self: flex-start;
+}
+.landing-header__label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}
+.landing-header__checkbox:not(:disabled):checked + label .landing-header__trigger-container {
+  background-color: #ffffff;
+}
+.landing-header__checkbox:not(:disabled):checked + label .landing-header__trigger {
+  transform: translateX(42px);
+}
+.landing-header__trigger-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 86px;
+  height: 48px;
+  background-color: rgb(41, 41, 41);
+  border-radius: 25px;
+  transition: background-color 0.5s;
+  position: relative;
+}
+.landing-header__trigger {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.06), 0px 3px 8px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  transform: translateX(3px);
+  transition: all 0.5s;
+}
+.landing-header__sun {
+  margin-left: 8px;
+}
+.landing-header__moon {
+  margin-right: 8px;
 }
 .landing-header__link {
   font-size: 16px;
@@ -668,39 +691,47 @@ img {
   }
 }
 .landing-main {
+  display: flex;
+  flex-direction: column;
+  gap: 160px;
+  padding-bottom: 120px;
+}
+
+.cta {
   padding-left: 120px;
   padding-right: 120px;
   width: 50%;
 }
-.landing-main__cta {
-  font-size: 40px;
+.cta__header {
+  font-size: 60px;
   font-style: normal;
   font-weight: 600;
-  line-height: 50px;
-  margin-top: 151px;
+  line-height: 73px;
+  margin-top: 120px;
   margin-bottom: 0;
 }
-.landing-main__advantage {
+.cta__advantage {
   font-weight: 500;
-  margin-top: 24px;
+  margin-top: 32px;
   margin-bottom: 0;
+  font-size: 18px;
+  line-height: 28px;
 }
-.landing-main__coming-soon {
-  margin-top: 111px;
-  margin-bottom: 0;
+.cta__sign-in {
+  width: 368px;
+  margin-top: 32px;
 }
-.landing-main__additional-info {
-  font-size: 26px;
+.cta__additional-info {
+  font-size: 40px;
   font-weight: 600;
-  line-height: 36px;
-  margin-top: 131px;
+  line-height: 49px;
+  margin-top: 64px;
   margin-bottom: 0;
 }
-.landing-main__apps-wrapper {
+.cta__apps-wrapper {
   margin-top: 24px;
-  margin-bottom: 115px;
   display: flex;
-  gap: 31px;
+  gap: 32px;
 }
 
 @media (max-width: 1199px) {
@@ -755,24 +786,81 @@ img {
     margin-top: 95px;
   }
 }
-.landing-footer {
-  background-color: transparent;
+.eee {
+  background-color: #bfff00;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 16px;
-  padding-left: 120px;
-  padding-right: 120px;
-  padding-bottom: 40px;
+  padding: 0 120px;
+  gap: 32px;
 }
-.landing-footer__tech-info, .landing-footer__copyright {
+.eee__header {
+  font-size: 60px;
+  line-height: 73px;
+  font-weight: 600;
   margin: 0;
 }
-.landing-footer__tech-info, .landing-footer__linkedin, .landing-footer__email {
+.eee__text {
+  width: 923px;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+  margin: 0;
+}
+.eee__images {
+  margin-top: 32px;
+}
+
+.integration {
+  background-color: #bfff00;
+  display: flex;
+  flex-direction: column;
+  padding: 0 120px;
+  gap: 32px;
+}
+.integration__header {
+  font-size: 60px;
+  line-height: 73px;
+  font-weight: 600;
+  margin: 0;
+}
+.integration__text {
+  width: 923px;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.landing-footer {
+  background-color: #293133;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 64px 120px;
+}
+.landing-footer__tech-info, .landing-footer__copyright, .landing-footer__y-id {
+  margin: 0;
+  color: #ffffff;
+}
+.landing-footer__tech-info, .landing-footer__linkedin, .landing-footer__facebook, .landing-footer__email {
   font-weight: 500;
 }
-.landing-footer__linkedin, .landing-footer__email {
-  color: #293133;
+.landing-footer__linkedin, .landing-footer__facebook, .landing-footer__email, .landing-footer__policy {
+  color: #ffffff;
+}
+.landing-footer__apps-wrapper {
+  margin-top: 16px;
+  display: flex;
+  gap: 32px;
+}
+.landing-footer__left-wrapper, .landing-footer__right-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.landing-footer__right-wrapper {
+  align-items: flex-end;
+  margin-top: 44px;
 }
 
 @media (max-width: 1199px) {

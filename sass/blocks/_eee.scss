@@ -1,0 +1,26 @@
+.eee {
+  background-color: $bg-primary;
+  display: flex;
+  flex-direction: column;
+  padding: 0 120px;
+  gap: 32px;
+
+  &__header {
+    font-size: 60px;
+    line-height: 73px;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  &__text {
+    width: 923px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  &__images {
+    margin-top: 32px;
+  }
+}

@@ -1,27 +1,47 @@
 .landing-footer {
-  background-color: transparent;
+  background-color: $bg-dark-grey;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: flex-start;
-  gap: 16px;
-  padding-left: 120px;
-  padding-right: 120px;
-  padding-bottom: 40px;
+  padding: 64px 120px;
 
   &__tech-info,
-  &__copyright {
+  &__copyright,
+  &__y-id {
     margin: 0;
+    color: $font-color-fifth;
   }
 
   &__tech-info,
   &__linkedin,
+  &__facebook,
   &__email {
     font-weight: 500;
   }
 
   &__linkedin,
-  &__email {
-    color: $font-color-primary;
+  &__facebook,
+  &__email,
+  &__policy {
+    color: $font-color-fifth;
+  }
+
+  &__apps-wrapper {
+    margin-top: 16px;
+    display: flex;
+    gap: 32px;
+  }
+
+  &__left-wrapper,
+  &__right-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__right-wrapper {
+    align-items: flex-end;
+    margin-top: 44px;
   }
 }
 

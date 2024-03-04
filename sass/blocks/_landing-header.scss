@@ -15,7 +15,21 @@
     position: absolute;
     right: 120px;
     display: flex;
-    gap: 16px;
+    gap: 64px;
+  }
+
+  &__how-it-works,
+  &__faqs {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    color: $font-color-primary;
+    padding: 13px 0;
+  }
+
+  &__right-side-wrapper {
+    display: flex;
+    gap: 32px;
   }
 
   &__language {
@@ -23,9 +37,8 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 13px 16px;
-    background-color: $bg-main;
     border-radius: 24px;
-    border: 1px solid $bg-light-grey;
+    border: 1px solid $bg-dark-grey;
     gap: 10px;
     cursor: pointer;
     height: 50px;
@@ -40,6 +53,56 @@
   &__log-in,
   &__sign-up {
     align-self: flex-start;
+  }
+
+  &__label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+  }
+
+  &__checkbox:not(:disabled):checked + label .landing-header__trigger-container {
+    background-color: $bg-main;
+  }
+
+  &__checkbox:not(:disabled):checked + label .landing-header__trigger {
+    transform: translateX(42px);
+  }
+
+  &__trigger-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 86px;
+    height: 48px;
+    background-color: $bg-secondary;
+    border-radius: 25px;
+    transition: background-color 0.5s;
+    position: relative;
+  }
+
+  &__trigger {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: $bg-main;
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.06), 0px 3px 8px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    transform: translateX(3px);
+    transition: all 0.5s;
+  }
+
+  &__sun {
+    margin-left: 8px;
+  }
+
+  &__moon {
+    margin-right: 8px;
   }
 
   &__link {
