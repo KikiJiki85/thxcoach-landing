@@ -4,3 +4,9 @@
   gap: 160px;
   padding-bottom: 120px;
 }
+
+@media (max-width: 1199px) {
+  .landing-main {
+    gap: 120px;
+  }
+}

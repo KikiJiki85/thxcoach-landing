@@ -2,6 +2,7 @@
   background-color: $bg-primary;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   padding: 0 120px;
   gap: 32px;
 
@@ -13,10 +14,25 @@
   }
 
   &__text {
-    width: 923px;
     font-size: 18px;
     line-height: 28px;
     font-weight: 500;
     margin: 0;
+  }
+  &__images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 32px;
+    row-gap: 48px;
+    margin-top: 32px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .integration {
+    &__header {
+      font-size: 50px;
+      line-height: 61px;
+    }
   }
 }
