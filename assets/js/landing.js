@@ -1,3 +1,5 @@
+import { slideUp, slideDown } from "./animation.js";
+
 function init() {
   const landingBody = document.querySelector(".landing__body");
   const languageSwitch = document.querySelector(".landing-header__language");
@@ -63,9 +65,35 @@ function init() {
     const countryLabel = document.querySelector(".sign-up-2__country");
     countryLabel.textContent = pickedCountry;
     countryLabel.classList.add("sign-up-2__label--picked");
-
     signUpCountry.classList.remove("sign-up-country--show");
   });
+
+  const items = document.querySelectorAll(".faq__item");
+  const triggers = document.querySelectorAll(".faq__trigger");
+  const content = document.querySelectorAll(".faq__content");
+
+  triggers.forEach((trigger, idx) => {
+    if (trigger.parentNode.classList.contains("faq__item--active")) slideDown(content[idx]);
+
+    trigger.addEventListener("click", () => {
+      const parent = trigger.parentNode;
+      parent.classList.toggle("faq__item--active");
+
+      if (parent.classList.contains("faq__item--active")) {
+        slideDown(content[idx]);
+        items.forEach((item, i) => {
+          if (i !== idx) {
+            slideUp(content[i]);
+            item.classList.remove("faq__item--active");
+          }
+        });
+      } else {
+        slideUp(content[idx]);
+      }
+    });
+  });
+
+  accordion();
 }
 
 document.addEventListener("DOMContentLoaded", init);
