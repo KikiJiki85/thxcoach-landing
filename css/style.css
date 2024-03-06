@@ -870,6 +870,143 @@ img {
     line-height: 61px;
   }
 }
+.how-it-works {
+  padding: 0 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+.how-it-works__header {
+  font-size: 60px;
+  line-height: 73px;
+  font-weight: 600;
+  margin: 0;
+}
+.how-it-works__switcher {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.how-it-works__athletes, .how-it-works__coaches {
+  padding: 16px 32px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 50px;
+  line-height: 61px;
+  font-weight: 600;
+  color: #293133;
+  cursor: pointer;
+}
+.how-it-works__athletes--active, .how-it-works__coaches--active {
+  background-color: #ffffff;
+  border-radius: 64px;
+}
+.how-it-works__coaches-block {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+.how-it-works__benefits {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 72px;
+}
+.how-it-works__benefit {
+  padding: 48px 32px;
+  border-radius: 32px;
+  background-color: #ffffff;
+}
+.how-it-works__benefit--dark {
+  color: #ffffff;
+  background-color: #293133;
+}
+.how-it-works__benefit-header {
+  margin: 0;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 600;
+}
+.how-it-works__benefit-text {
+  font-weight: 500;
+}
+.how-it-works__features {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.how-it-works__features-header {
+  font-size: 40px;
+  line-height: 49px;
+  font-weight: 600;
+  margin: 0;
+}
+.how-it-works__features-text {
+  font-weight: 500;
+  margin: 0;
+  width: 65%;
+}
+.how-it-works__features-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  row-gap: 32px;
+}
+.how-it-works__feature {
+  background-color: rgba(248, 255, 226, 0.6);
+  padding: 48px 32px;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.how-it-works__feature-header {
+  font-size: 30px;
+  line-height: 37px;
+  font-weight: 600;
+  margin: 0;
+}
+.how-it-works__feature-text {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+.how-it-works__bottom-text {
+  font-weight: 500;
+  margin: 0;
+  width: 65%;
+  margin-bottom: -32px;
+}
+.how-it-works__register {
+  background-color: #ffffff;
+  border-radius: 32px;
+  padding: 48px 32px;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.how-it-works__register-text {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 600;
+  margin: 0;
+}
+.how-it-works__sign-in {
+  width: 368px;
+}
+
+@media (max-width: 1199px) {
+  .how-it-works__header {
+    font-size: 50px;
+    line-height: 61px;
+  }
+}
 .faq {
   padding: 0 120px;
   display: flex;
@@ -895,6 +1032,9 @@ img {
 }
 .faq__item--active .faq__icon {
   rotate: 180deg;
+}
+.faq__item--active .faq__icon-arrow {
+  fill: #ffffff;
 }
 .faq__header {
   font-size: 60px;
@@ -928,7 +1068,7 @@ img {
 }
 
 @media (max-width: 1199px) {
-  .eee__header {
+  .faq__header {
     font-size: 50px;
     line-height: 61px;
   }

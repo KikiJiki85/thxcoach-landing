@@ -1,5 +1,5 @@
 /* SLIDE UP */
-export const slideUp = (target, duration = 300) => {
+export const slideUp = (target, duration = 500) => {
   target.style.transitionProperty = "height, margin, padding";
   target.style.transitionDuration = duration + "ms";
   target.style.boxSizing = "border-box";
@@ -27,7 +27,7 @@ export const slideUp = (target, duration = 300) => {
   }, duration);
 };
 /* SLIDE DOWN */
-export const slideDown = (target, duration = 300) => {
+export const slideDown = (target, duration = 500) => {
   target.style.removeProperty("display");
   let display = window.getComputedStyle(target).display;
   if (display === "none") display = "grid";

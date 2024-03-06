@@ -1,0 +1,156 @@
+.how-it-works {
+  padding: 0 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  &__header {
+    font-size: 60px;
+    line-height: 73px;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  &__switcher {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__athletes,
+  &__coaches {
+    padding: 16px 32px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 50px;
+    line-height: 61px;
+    font-weight: 600;
+    color: $font-color-primary;
+    cursor: pointer;
+
+    &--active {
+      background-color: $bg-main;
+      border-radius: 64px;
+    }
+  }
+
+  &__coaches-block {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+  }
+
+  &__benefits {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 72px;
+  }
+
+  &__benefit {
+    padding: 48px 32px;
+    border-radius: 32px;
+    background-color: $bg-main;
+    &--dark {
+      color: $font-color-fifth;
+      background-color: $bg-dark-grey;
+    }
+  }
+
+  &__benefit-header {
+    margin: 0;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+  }
+
+  &__benefit-text {
+    font-weight: 500;
+  }
+
+  &__features {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  &__features-header {
+    font-size: 40px;
+    line-height: 49px;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  &__features-text {
+    font-weight: 500;
+    margin: 0;
+    width: 65%;
+  }
+
+  &__features-list {
+    @include list-reset;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+    row-gap: 32px;
+  }
+
+  &__feature {
+    background-color: $bg-light-green;
+    padding: 48px 32px;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__feature-header {
+    font-size: 30px;
+    line-height: 37px;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  &__feature-text {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  &__bottom-text {
+    font-weight: 500;
+    margin: 0;
+    width: 65%;
+    margin-bottom: -32px;
+  }
+
+  &__register {
+    background-color: $bg-main;
+    border-radius: 32px;
+    padding: 48px 32px;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__register-text {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  &__sign-in {
+    width: 368px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .how-it-works {
+    &__header {
+      font-size: 50px;
+      line-height: 61px;
+    }
+  }
+}

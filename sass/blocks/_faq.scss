@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   gap: 64px;
+
   &__accordion {
     @include list-reset;
     display: flex;
@@ -20,6 +21,9 @@
       color: $font-color-fifth;
       .faq__icon {
         rotate: 180deg;
+      }
+      .faq__icon-arrow {
+        fill: $bg-main;
       }
     }
   }
@@ -62,7 +66,7 @@
 }
 
 @media (max-width: 1199px) {
-  .eee {
+  .faq {
     &__header {
       font-size: 50px;
       line-height: 61px;
