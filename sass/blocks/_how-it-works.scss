@@ -34,7 +34,8 @@
     }
   }
 
-  &__coaches-block {
+  &__coaches-block,
+  &__athletes-block {
     display: flex;
     flex-direction: column;
     gap: 64px;

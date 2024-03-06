@@ -902,7 +902,7 @@ img {
   background-color: #ffffff;
   border-radius: 64px;
 }
-.how-it-works__coaches-block {
+.how-it-works__coaches-block, .how-it-works__athletes-block {
   display: flex;
   flex-direction: column;
   gap: 64px;

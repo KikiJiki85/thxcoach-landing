@@ -93,7 +93,24 @@ function init() {
     });
   });
 
-  accordion();
+  const forAthletesBtn = document.querySelector(".how-it-works__athletes");
+  const forCoachesBtn = document.querySelector(".how-it-works__coaches");
+  const athletesBlock = document.querySelector(".how-it-works__athletes-block");
+  const coachesBlock = document.querySelector(".how-it-works__coaches-block");
+
+  forAthletesBtn.addEventListener("click", () => {
+    forCoachesBtn.classList.remove("how-it-works__coaches--active");
+    forAthletesBtn.classList.add("how-it-works__athletes--active");
+    coachesBlock.classList.add("visually-hidden");
+    athletesBlock.classList.remove("visually-hidden");
+  });
+
+  forCoachesBtn.addEventListener("click", () => {
+    forAthletesBtn.classList.remove("how-it-works__athletes--active");
+    forCoachesBtn.classList.add("how-it-works__coaches--active");
+    athletesBlock.classList.add("visually-hidden");
+    coachesBlock.classList.remove("visually-hidden");
+  });
 }
 
 document.addEventListener("DOMContentLoaded", init);
