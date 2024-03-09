@@ -111,6 +111,23 @@ function init() {
     athletesBlock.classList.add("visually-hidden");
     coachesBlock.classList.remove("visually-hidden");
   });
+
+  const themeSwitcher = document.querySelector(".landing-header__label--checkbox");
+
+  themeSwitcher.addEventListener("click", () => {
+    landingBody.classList.toggle("theme-light");
+    landingBody.classList.toggle("theme-dark");
+
+    const images = document.querySelectorAll(".integration-image");
+
+    for (let i = 0; i < images.length; i++) {
+      if (images[i].src.endsWith("light-theme.svg")) {
+        images[i].src = images[i].src.replace("light-theme.svg", "dark-theme.svg");
+      } else if (images[i].src.endsWith("dark-theme.svg")) {
+        images[i].src = images[i].src.replace("dark-theme.svg", "light-theme.svg");
+      }
+    }
+  });
 }
 
 document.addEventListener("DOMContentLoaded", init);

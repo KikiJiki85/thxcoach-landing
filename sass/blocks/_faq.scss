@@ -13,12 +13,12 @@
 
   &__item {
     cursor: pointer;
-    background-color: $bg-main;
+    background-color: var(--bg-special);
     border-radius: 32px;
 
     &--active {
-      background-color: $bg-dark-grey;
-      color: $font-color-fifth;
+      background-color: var(--bg-btn);
+      color: var(--text-footer);
       .faq__icon {
         rotate: 180deg;
       }

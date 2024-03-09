@@ -1,6 +1,7 @@
 .cta {
-  background-image: url("../assets/img/landing-bcg-1200.webp");
+  background-image: var(--bgImage1200);
   background-size: 900px 884px;
+  transition: background-image 0.5s;
   width: 100%;
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -33,6 +34,8 @@
   &__sign-in {
     width: 368px;
     margin-top: 32px;
+    background-color: var(--bg-btn);
+    color: var(--text-footer);
   }
 
   &__additional-info {

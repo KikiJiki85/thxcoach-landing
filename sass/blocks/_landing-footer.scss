@@ -1,5 +1,6 @@
 .landing-footer {
-  background-color: $bg-dark-grey;
+  background-color: var(--bg-footer);
+  transition: background-color 0.5s;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -9,7 +10,7 @@
   &__copyright,
   &__y-id {
     margin: 0;
-    color: $font-color-fifth;
+    color: var(--text-footer);
   }
 
   &__tech-info,
@@ -23,7 +24,7 @@
   &__facebook,
   &__email,
   &__policy {
-    color: $font-color-fifth;
+    color: var(--text-footer);
   }
 
   &__apps-wrapper {

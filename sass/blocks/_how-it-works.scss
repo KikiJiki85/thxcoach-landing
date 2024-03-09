@@ -25,11 +25,12 @@
     font-size: 50px;
     line-height: 61px;
     font-weight: 600;
-    color: $font-color-primary;
+    color: var(--text);
     cursor: pointer;
 
     &--active {
-      background-color: $bg-main;
+      background-color: var(--bg-special);
+      color: var(--text);
       border-radius: 64px;
     }
   }
@@ -50,10 +51,10 @@
   &__benefit {
     padding: 48px 32px;
     border-radius: 32px;
-    background-color: $bg-main;
+    background-color: var(--bg-special);
     &--dark {
-      color: $font-color-fifth;
-      background-color: $bg-dark-grey;
+      background-color: var(--bg-btn);
+      color: var(--text-footer);
     }
   }
 
@@ -126,7 +127,7 @@
   }
 
   &__register {
-    background-color: $bg-main;
+    background-color: var(--bg-special2);
     border-radius: 32px;
     padding: 48px 32px;
     width: 65%;
@@ -144,6 +145,8 @@
 
   &__sign-in {
     width: 368px;
+    background-color: var(--bg-btn);
+    color: var(--text-footer);
   }
 }
 

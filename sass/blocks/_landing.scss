@@ -1,7 +1,6 @@
 .landing {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  background-color: $bg-primary;
 
   &__container {
     margin: 0 auto;
@@ -9,7 +8,9 @@
     font-size: 18px;
     line-height: 28px;
     font-weight: 400;
-    color: $font-color-primary;
+    color: var(--text);
+    background-color: var(--bg-main);
+    transition: color 0.5s, background-color 0.5s;
     min-height: 100%;
     display: grid;
     grid-template-rows: min-content 1fr min-content;

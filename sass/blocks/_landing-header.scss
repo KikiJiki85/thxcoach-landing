@@ -2,7 +2,8 @@
   z-index: 15;
   display: flex;
   justify-content: space-between;
-  background-color: $bg-primary;
+  background-color: var(--bg-header);
+  transition: background-color 0.5s;
   padding: 23px 120px;
   position: relative;
 

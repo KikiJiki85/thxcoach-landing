@@ -15,3 +15,45 @@ $font-color-tertiary: #505050;
 $font-color-quaternary: #797979;
 $font-color-fifth: #ffffff;
 $font-color-sixth: #e32636;
+
+$themes: (
+  light: (
+    bg-header: #bfff00,
+    bg-main: #bfff00,
+    bg-btn: #293133,
+    bg-permanent: rgba(248, 255, 226, 0.6),
+    bg-footer: #293133,
+    bg-special: #ffffff,
+    bg-special2: #ffffff,
+    text: #293133,
+    text-footer: #ffffff,
+    bgImage1200: url("../assets/img/landing-bcg-1200.webp"),
+  ),
+  dark: (
+    bg-header: #b2f042,
+    bg-main: #292929,
+    bg-btn: #ededed,
+    bg-permanent: rgba(248, 255, 226, 0.6),
+    bg-footer: #b2f042,
+    bg-special: #1e1e1e,
+    bg-special2: #3e3e3e,
+    text: #ffffff,
+    text-footer: #293133,
+    bgImage1200: url("../assets/img/landing-bcg-1200d.webp"),
+  ),
+);
+
+@each $theme, $map in $themes {
+  .theme-#{$theme} {
+    --bg-header: #{map-get($map, bg-header)};
+    --bg-main: #{map-get($map, bg-main)};
+    --bg-btn: #{map-get($map, bg-btn)};
+    --bg-permanent: #{map-get($map, bg-permanent)};
+    --bg-footer: #{map-get($map, bg-footer)};
+    --bg-special: #{map-get($map, bg-special)};
+    --bg-special2: #{map-get($map, bg-special2)};
+    --text: #{map-get($map, text)};
+    --text-footer: #{map-get($map, text-footer)};
+    --bgImage1200: #{map-get($map, bgImage1200)};
+  }
+}
