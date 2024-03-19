@@ -7,7 +7,7 @@
   bottom: 0;
   max-width: 460px;
   min-width: 460px;
-  background-color: $bg-main;
+  background-color: var(--bg-signup);
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -38,10 +38,13 @@
     margin-right: 16px;
     margin-left: 16px;
     margin-top: auto;
+    background-color: var(--bg-btn);
+    color: var(--text-footer);
   }
 
   &__back {
     background-color: $bg-middle-light-grey;
+    padding: 0;
   }
 
   &__crutch {
@@ -82,18 +85,34 @@
     align-items: center;
     gap: 16px;
     cursor: pointer;
-    color: $font-color-primary;
+    color: var(--text);
+  }
+
+  .sign-up-country__checkbox:not(:disabled):checked + label .sign-up-country__trigger {
+    background-image: url("../assets/img/radio-on.svg");
   }
 
   &__trigger {
     width: 16px;
     height: 16px;
-    background-image: url("../assets/img/radio-off.svg");
+  }
+
+  &__trigger--light {
+    background-image: url("../assets/img/radio-off-light-theme.svg");
     background-repeat: no-repeat;
   }
 
-  .sign-up-country__checkbox:not(:disabled):checked + label .sign-up-country__trigger {
-    background-image: url("../assets/img/radio-on.svg");
+  .sign-up-country__checkbox:not(:disabled):checked + label .sign-up-country__trigger--light {
+    background-image: url("../assets/img/radio-on-light-theme.svg");
+  }
+
+  &__trigger--dark {
+    background-image: url("../assets/img/radio-off-dark-theme.svg");
+    background-repeat: no-repeat;
+  }
+
+  .sign-up-country__checkbox:not(:disabled):checked + label .sign-up-country__trigger--dark {
+    background-image: url("../assets/img/radio-on-dark-theme.svg");
   }
 
   &__select {
@@ -102,19 +121,6 @@
     flex-direction: column;
     gap: 24px;
   }
-
-  // &__item {
-  //   display: flex;
-  //   flex-direction: column;
-  //   padding: 24px 0;
-
-  //   &:not(:nth-last-child(3)) {
-  //     border-bottom: 1px solid $bg-middle-light-grey;
-  //   }
-  //   &:nth-child(4) {
-  //     padding-bottom: 0;
-  //   }
-  // }
 
   &__text-small {
     font-weight: 500;
@@ -137,7 +143,7 @@
       border: 1px solid $bg-light-grey;
     }
   }
-  &__input-checkbox:checked + .sign-up-2__text-small::after {
+  &__input-checkbox:checked + .sign-up-country__text-small::after {
     position: absolute;
     content: "";
     top: 0px;

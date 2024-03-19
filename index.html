@@ -61,7 +61,7 @@
                   />
                 </svg>
               </a>
-              <a class="landing-header__link landing-header__link-second" href="index-fi.html"> Fi </a>
+              <a class="landing-header__link landing-header__link-second" href="#">Fi</a>
             </div>
             <button class="landing-header__sign-up btn btn__landing">Sign in</button>
             <div class="landing-header__theme-switcher">
@@ -324,10 +324,10 @@
         <section class="landing-main__how-it-works-block how-it-works" id="how-it-works">
           <h2 class="how-it-works__header">How It Works</h2>
           <div class="how-it-works__switcher">
-            <button class="how-it-works__athletes">For Athletes</button>
-            <button class="how-it-works__coaches how-it-works__coaches--active">For Coaches</button>
+            <button class="how-it-works__athletes how-it-works__athletes--active">For Athletes</button>
+            <button class="how-it-works__coaches">For Coaches</button>
           </div>
-          <div class="how-it-works__coaches-block">
+          <div class="how-it-works__coaches-block visually-hidden">
             <div class="how-it-works__benefits">
               <div class="how-it-works__benefit how-it-works__benefit--dark">
                 <p class="how-it-works__benefit-header">Discover & Connect</p>
@@ -383,7 +383,7 @@
               </ul>
             </div>
           </div>
-          <div class="how-it-works__athletes-block visually-hidden">
+          <div class="how-it-works__athletes-block">
             <div class="how-it-works__benefits">
               <div class="how-it-works__benefit how-it-works__benefit--dark">
                 <p class="how-it-works__benefit-header">Set Goals & Get Matched</p>
@@ -710,12 +710,7 @@
           <div class="sign-up__crutch"></div>
           <h2 class="sign-up__header">Sign up</h2>
           <button class="sign-up__close btn__close">
-            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M0.66806 14.4043C0.360443 14.1055 0.369232 13.5957 0.66806 13.2969L6.29306 7.66309L0.66806 2.03809C0.369232 1.73926 0.369232 1.23828 0.66806 0.930664C0.966888 0.614258 1.48544 0.623047 1.78427 0.930664L7.40927 6.55566L13.0343 0.930664C13.3331 0.623047 13.8429 0.623047 14.1505 0.930664C14.4581 1.22949 14.4493 1.73926 14.1505 2.03809L8.52548 7.66309L14.1505 13.2969C14.4493 13.5957 14.4493 14.0967 14.1505 14.4043C13.8517 14.7119 13.3331 14.7031 13.0343 14.4043L7.40927 8.7793L1.78427 14.4043C1.48544 14.7031 0.975677 14.7031 0.66806 14.4043Z"
-                fill="#293133"
-              />
-            </svg>
+            <img class="sign-up__close-img" src="assets/img/close-btn-light-theme.svg" alt="Close button" />
           </button>
         </div>
         <div class="sign-up__main-content">
@@ -725,7 +720,7 @@
             <li class="sign-up__role">
               <input class="sign-up__checkbox visually-hidden" type="radio" name="role" id="role-athlete" checked />
               <label class="sign-up__label sign-up__label--checkbox" for="role-athlete">
-                <span class="sign-up__trigger"></span>
+                <span class="sign-up__trigger sign-up__trigger--light"></span>
                 Athlete</label
               >
             </li>
@@ -733,7 +728,7 @@
               <input class="sign-up__checkbox visually-hidden" type="radio" name="role" id="role-coach" />
 
               <label class="sign-up__label sign-up__label--checkbox" for="role-coach">
-                <span class="sign-up__trigger"></span>
+                <span class="sign-up__trigger sign-up__trigger--light"></span>
                 Coach</label
               >
             </li>
@@ -745,22 +740,7 @@
       <div class="sign-up-2">
         <div class="sign-up-2__header-wrapper">
           <button class="sign-up-2__back btn__back">
-            <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <mask id="path-1-inside-1_2304_7881" fill="white">
-                <path
-                  d="M-0.00479126 7.6543C-0.00479126 7.43457 0.0743103 7.23242 0.241302 7.07422L7.21103 0.253906C7.36044 0.104492 7.5538 0.0253906 7.78232 0.0253906C8.23935 0.0253906 8.59091 0.368164 8.59091 0.825195C8.59091 1.04492 8.49423 1.24707 8.35361 1.39648L1.95517 7.6543L8.35361 13.9121C8.49423 14.0615 8.59091 14.2549 8.59091 14.4834C8.59091 14.9404 8.23935 15.2832 7.78232 15.2832C7.5538 15.2832 7.36044 15.2041 7.21103 15.0459L0.241302 8.23438C0.0743103 8.06738 -0.00479126 7.87402 -0.00479126 7.6543Z"
-                />
-              </mask>
-              <path
-                d="M-0.00479126 7.6543C-0.00479126 7.43457 0.0743103 7.23242 0.241302 7.07422L7.21103 0.253906C7.36044 0.104492 7.5538 0.0253906 7.78232 0.0253906C8.23935 0.0253906 8.59091 0.368164 8.59091 0.825195C8.59091 1.04492 8.49423 1.24707 8.35361 1.39648L1.95517 7.6543L8.35361 13.9121C8.49423 14.0615 8.59091 14.2549 8.59091 14.4834C8.59091 14.9404 8.23935 15.2832 7.78232 15.2832C7.5538 15.2832 7.36044 15.2041 7.21103 15.0459L0.241302 8.23438C0.0743103 8.06738 -0.00479126 7.87402 -0.00479126 7.6543Z"
-                fill="black"
-              />
-              <path
-                d="M0.241302 7.07422L0.929047 7.80017L0.934922 7.79461L0.940707 7.78895L0.241302 7.07422ZM7.21103 0.253906L7.91047 0.968675L7.91814 0.961013L7.21103 0.253906ZM8.35361 1.39648L9.05281 2.1114L9.06762 2.09693L9.08181 2.08185L8.35361 1.39648ZM1.95517 7.6543L1.25596 6.93938L0.524978 7.6543L1.25596 8.36922L1.95517 7.6543ZM8.35361 13.9121L9.08181 13.2267L9.06762 13.2117L9.05281 13.1972L8.35361 13.9121ZM7.21103 15.0459L7.93804 14.3593L7.92429 14.3447L7.90997 14.3307L7.21103 15.0459ZM0.241302 8.23438L-0.465851 8.94153L-0.457641 8.94955L0.241302 8.23438ZM0.995209 7.6543C0.995209 7.66553 0.992883 7.69171 0.979017 7.72507C0.964712 7.75947 0.944847 7.7852 0.929047 7.80017L-0.446442 6.34827C-0.825464 6.70734 -1.00479 7.17796 -1.00479 7.6543H0.995209ZM0.940707 7.78895L7.91043 0.968633L6.51162 -0.46082L-0.458102 6.35949L0.940707 7.78895ZM7.91814 0.961013C7.90077 0.978377 7.87383 0.997842 7.84024 1.01136C7.80737 1.02458 7.78493 1.02539 7.78232 1.02539V-0.974609C7.30351 -0.974609 6.85117 -0.800444 6.50392 -0.453201L7.91814 0.961013ZM7.78232 1.02539C7.75547 1.02539 7.70344 1.01281 7.65631 0.96639C7.60809 0.918898 7.59091 0.861163 7.59091 0.825195H9.59091C9.59091 -0.198459 8.77719 -0.974609 7.78232 -0.974609V1.02539ZM7.59091 0.825195C7.59091 0.787094 7.59943 0.758146 7.60693 0.740771C7.61395 0.724514 7.62101 0.715795 7.62541 0.71112L9.08181 2.08185C9.36633 1.77954 9.59091 1.34116 9.59091 0.825195H7.59091ZM7.6544 0.681565L1.25596 6.93938L2.65438 8.36922L9.05281 2.1114L7.6544 0.681565ZM1.25596 8.36922L7.6544 14.627L9.05281 13.1972L2.65438 6.93938L1.25596 8.36922ZM7.62541 14.5975C7.62709 14.5993 7.61826 14.5905 7.60859 14.5684C7.59797 14.544 7.59091 14.5136 7.59091 14.4834H9.59091C9.59091 13.9531 9.3619 13.5243 9.08181 13.2267L7.62541 14.5975ZM7.59091 14.4834C7.59091 14.4474 7.60809 14.3897 7.65631 14.3422C7.70344 14.2958 7.75547 14.2832 7.78232 14.2832V16.2832C8.77719 16.2832 9.59091 15.5071 9.59091 14.4834H7.59091ZM7.78232 14.2832C7.78483 14.2832 7.81105 14.284 7.84936 14.2999C7.88899 14.3163 7.91957 14.3397 7.93804 14.3593L6.48402 15.7325C6.83669 16.1059 7.30029 16.2832 7.78232 16.2832V14.2832ZM7.90997 14.3307L0.940246 7.5192L-0.457641 8.94955L6.51209 15.7611L7.90997 14.3307ZM0.948409 7.52727C0.947113 7.52597 0.963006 7.54213 0.977466 7.57652C0.992159 7.61147 0.995209 7.64108 0.995209 7.6543H-1.00479C-1.00479 8.14686 -0.814874 8.59241 -0.465804 8.94148L0.948409 7.52727Z"
-                fill="#293133"
-                mask="url(#path-1-inside-1_2304_7881)"
-              />
-            </svg>
+            <img class="sign-up-2__back-img" src="assets/img/back-btn-light-theme.svg" alt="Back button" />
           </button>
           <h2 class="sign-up-2__header">Sign up</h2>
           <div class="sign-up-2__crutch"></div>
@@ -795,7 +775,7 @@
                 <li class="sign-up-2__role">
                   <input class="sign-up-2__checkbox visually-hidden" type="radio" name="sex" id="sex-male" checked />
                   <label class="sign-up-2__sex-label sign-up-2__sex-label--checkbox" for="sex-male">
-                    <span class="sign-up-2__trigger"></span>
+                    <span class="sign-up-2__trigger sign-up-2__trigger--light"></span>
                     Male</label
                   >
                 </li>
@@ -803,7 +783,7 @@
                   <input class="sign-up-2__checkbox visually-hidden" type="radio" name="sex" id="sex-female" />
 
                   <label class="sign-up-2__sex-label sign-up-2__sex-label--checkbox" for="sex-female">
-                    <span class="sign-up-2__trigger"></span>
+                    <span class="sign-up-2__trigger sign-up-2__trigger--light"></span>
                     Female</label
                   >
                 </li>
@@ -833,22 +813,7 @@
       <div class="sign-up-country">
         <div class="sign-up-country__header-wrapper">
           <button class="sign-up-country__back btn__back">
-            <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <mask id="path-1-inside-1_2304_7881" fill="white">
-                <path
-                  d="M-0.00479126 7.6543C-0.00479126 7.43457 0.0743103 7.23242 0.241302 7.07422L7.21103 0.253906C7.36044 0.104492 7.5538 0.0253906 7.78232 0.0253906C8.23935 0.0253906 8.59091 0.368164 8.59091 0.825195C8.59091 1.04492 8.49423 1.24707 8.35361 1.39648L1.95517 7.6543L8.35361 13.9121C8.49423 14.0615 8.59091 14.2549 8.59091 14.4834C8.59091 14.9404 8.23935 15.2832 7.78232 15.2832C7.5538 15.2832 7.36044 15.2041 7.21103 15.0459L0.241302 8.23438C0.0743103 8.06738 -0.00479126 7.87402 -0.00479126 7.6543Z"
-                />
-              </mask>
-              <path
-                d="M-0.00479126 7.6543C-0.00479126 7.43457 0.0743103 7.23242 0.241302 7.07422L7.21103 0.253906C7.36044 0.104492 7.5538 0.0253906 7.78232 0.0253906C8.23935 0.0253906 8.59091 0.368164 8.59091 0.825195C8.59091 1.04492 8.49423 1.24707 8.35361 1.39648L1.95517 7.6543L8.35361 13.9121C8.49423 14.0615 8.59091 14.2549 8.59091 14.4834C8.59091 14.9404 8.23935 15.2832 7.78232 15.2832C7.5538 15.2832 7.36044 15.2041 7.21103 15.0459L0.241302 8.23438C0.0743103 8.06738 -0.00479126 7.87402 -0.00479126 7.6543Z"
-                fill="black"
-              />
-              <path
-                d="M0.241302 7.07422L0.929047 7.80017L0.934922 7.79461L0.940707 7.78895L0.241302 7.07422ZM7.21103 0.253906L7.91047 0.968675L7.91814 0.961013L7.21103 0.253906ZM8.35361 1.39648L9.05281 2.1114L9.06762 2.09693L9.08181 2.08185L8.35361 1.39648ZM1.95517 7.6543L1.25596 6.93938L0.524978 7.6543L1.25596 8.36922L1.95517 7.6543ZM8.35361 13.9121L9.08181 13.2267L9.06762 13.2117L9.05281 13.1972L8.35361 13.9121ZM7.21103 15.0459L7.93804 14.3593L7.92429 14.3447L7.90997 14.3307L7.21103 15.0459ZM0.241302 8.23438L-0.465851 8.94153L-0.457641 8.94955L0.241302 8.23438ZM0.995209 7.6543C0.995209 7.66553 0.992883 7.69171 0.979017 7.72507C0.964712 7.75947 0.944847 7.7852 0.929047 7.80017L-0.446442 6.34827C-0.825464 6.70734 -1.00479 7.17796 -1.00479 7.6543H0.995209ZM0.940707 7.78895L7.91043 0.968633L6.51162 -0.46082L-0.458102 6.35949L0.940707 7.78895ZM7.91814 0.961013C7.90077 0.978377 7.87383 0.997842 7.84024 1.01136C7.80737 1.02458 7.78493 1.02539 7.78232 1.02539V-0.974609C7.30351 -0.974609 6.85117 -0.800444 6.50392 -0.453201L7.91814 0.961013ZM7.78232 1.02539C7.75547 1.02539 7.70344 1.01281 7.65631 0.96639C7.60809 0.918898 7.59091 0.861163 7.59091 0.825195H9.59091C9.59091 -0.198459 8.77719 -0.974609 7.78232 -0.974609V1.02539ZM7.59091 0.825195C7.59091 0.787094 7.59943 0.758146 7.60693 0.740771C7.61395 0.724514 7.62101 0.715795 7.62541 0.71112L9.08181 2.08185C9.36633 1.77954 9.59091 1.34116 9.59091 0.825195H7.59091ZM7.6544 0.681565L1.25596 6.93938L2.65438 8.36922L9.05281 2.1114L7.6544 0.681565ZM1.25596 8.36922L7.6544 14.627L9.05281 13.1972L2.65438 6.93938L1.25596 8.36922ZM7.62541 14.5975C7.62709 14.5993 7.61826 14.5905 7.60859 14.5684C7.59797 14.544 7.59091 14.5136 7.59091 14.4834H9.59091C9.59091 13.9531 9.3619 13.5243 9.08181 13.2267L7.62541 14.5975ZM7.59091 14.4834C7.59091 14.4474 7.60809 14.3897 7.65631 14.3422C7.70344 14.2958 7.75547 14.2832 7.78232 14.2832V16.2832C8.77719 16.2832 9.59091 15.5071 9.59091 14.4834H7.59091ZM7.78232 14.2832C7.78483 14.2832 7.81105 14.284 7.84936 14.2999C7.88899 14.3163 7.91957 14.3397 7.93804 14.3593L6.48402 15.7325C6.83669 16.1059 7.30029 16.2832 7.78232 16.2832V14.2832ZM7.90997 14.3307L0.940246 7.5192L-0.457641 8.94955L6.51209 15.7611L7.90997 14.3307ZM0.948409 7.52727C0.947113 7.52597 0.963006 7.54213 0.977466 7.57652C0.992159 7.61147 0.995209 7.64108 0.995209 7.6543H-1.00479C-1.00479 8.14686 -0.814874 8.59241 -0.465804 8.94148L0.948409 7.52727Z"
-                fill="#293133"
-                mask="url(#path-1-inside-1_2304_7881)"
-              />
-            </svg>
+            <img class="sign-up-country__back-img" src="assets/img/back-btn-light-theme.svg" alt="Back button" />
           </button>
           <h2 class="sign-up-country__header">Country</h2>
           <div class="sign-up-country__crutch"></div>
@@ -860,126 +825,126 @@
             <li class="sign-up-country__item">
               <input class="sign-up-country__checkbox visually-hidden" type="radio" name="country" id="austria" />
               <label class="sign-up-country__label sign-up-country__sex-label--checkbox" for="austria">
-                <span class="sign-up-country__trigger"></span>
+                <span class="sign-up-country__trigger sign-up-country__trigger--light"></span>
                 Austria</label
               >
             </li>
             <li class="sign-up-country__item">
               <input class="sign-up-country__checkbox visually-hidden" type="radio" name="country" id="belgium" />
               <label class="sign-up-country__label sign-up-country__sex-label--checkbox" for="belgium">
-                <span class="sign-up-country__trigger"></span>
+                <span class="sign-up-country__trigger sign-up-country__trigger--light"></span>
                 Belgium</label
               >
             </li>
             <li class="sign-up-country__item">
               <input class="sign-up-country__checkbox visually-hidden" type="radio" name="country" id="bulgaria" />
               <label class="sign-up-country__label sign-up-country__sex-label--checkbox" for="bulgaria">
-                <span class="sign-up-country__trigger"></span>
+                <span class="sign-up-country__trigger sign-up-country__trigger--light"></span>
                 Bulgaria</label
               >
             </li>
             <li class="sign-up-country__item">
               <input class="sign-up-country__checkbox visually-hidden" type="radio" name="country" id="croatia" />
               <label class="sign-up-country__label sign-up-country__sex-label--checkbox" for="croatia">
-                <span class="sign-up-country__trigger"></span>
+                <span class="sign-up-country__trigger sign-up-country__trigger--light"></span>
                 Croatia</label
               >
             </li>
             <li class="sign-up-country__item">
               <input class="sign-up-country__checkbox visually-hidden" type="radio" name="country" id="cyprus" />
               <label class="sign-up-country__label sign-up-country__sex-label--checkbox" for="cyprus">
-                <span class="sign-up-country__trigger"></span>
+                <span class="sign-up-country__trigger sign-up-country__trigger--light"></span>
                 Cyprus</label
               >
             </li>
             <li class="sign-up-country__item">
               <input class="sign-up-country__checkbox visually-hidden" type="radio" name="country" id="czech" />
               <label class="sign-up-country__label sign-up-country__sex-label--checkbox" for="czech">
-                <span class="sign-up-country__trigger"></span>
+                <span class="sign-up-country__trigger sign-up-country__trigger--light"></span>
                 Czech Republic</label
               >
             </li>
             <li class="sign-up-country__item">
               <input class="sign-up-country__checkbox visually-hidden" type="radio" name="country" id="denmark" />
               <label class="sign-up-country__label sign-up-country__sex-label--checkbox" for="denmark">
-                <span class="sign-up-country__trigger"></span>
+                <span class="sign-up-country__trigger sign-up-country__trigger--light"></span>
                 Denmark</label
               >
             </li>
             <li class="sign-up-country__item">
               <input class="sign-up-country__checkbox visually-hidden" type="radio" name="country" id="estonia" />
               <label class="sign-up-country__label sign-up-country__sex-label--checkbox" for="estonia">
-                <span class="sign-up-country__trigger"></span>
+                <span class="sign-up-country__trigger sign-up-country__trigger--light"></span>
                 Estonia</label
               >
             </li>
             <li class="sign-up-country__item">
               <input class="sign-up-country__checkbox visually-hidden" type="radio" name="country" id="finland" checked />
               <label class="sign-up-country__label sign-up-country__sex-label--checkbox" for="finland">
-                <span class="sign-up-country__trigger"></span>
+                <span class="sign-up-country__trigger sign-up-country__trigger--light"></span>
                 Finland</label
               >
             </li>
             <li class="sign-up-country__item">
               <input class="sign-up-country__checkbox visually-hidden" type="radio" name="country" id="france" />
               <label class="sign-up-country__label sign-up-country__sex-label--checkbox" for="france">
-                <span class="sign-up-country__trigger"></span>
+                <span class="sign-up-country__trigger sign-up-country__trigger--light"></span>
                 France</label
               >
             </li>
             <li class="sign-up-country__item">
               <input class="sign-up-country__checkbox visually-hidden" type="radio" name="country" id="germany" />
               <label class="sign-up-country__label sign-up-country__sex-label--checkbox" for="germany">
-                <span class="sign-up-country__trigger"></span>
+                <span class="sign-up-country__trigger sign-up-country__trigger--light"></span>
                 Germany</label
               >
             </li>
             <li class="sign-up-country__item">
               <input class="sign-up-country__checkbox visually-hidden" type="radio" name="country" id="greece" />
               <label class="sign-up-country__label sign-up-country__sex-label--checkbox" for="greece">
-                <span class="sign-up-country__trigger"></span>
+                <span class="sign-up-country__trigger sign-up-country__trigger--light"></span>
                 Greece</label
               >
             </li>
             <li class="sign-up-country__item">
               <input class="sign-up-country__checkbox visually-hidden" type="radio" name="country" id="hungary" />
               <label class="sign-up-country__label sign-up-country__sex-label--checkbox" for="hungary">
-                <span class="sign-up-country__trigger"></span>
+                <span class="sign-up-country__trigger sign-up-country__trigger--light"></span>
                 Hyngary</label
               >
             </li>
             <li class="sign-up-country__item">
               <input class="sign-up-country__checkbox visually-hidden" type="radio" name="country" id="ireland" />
               <label class="sign-up-country__label sign-up-country__sex-label--checkbox" for="ireland">
-                <span class="sign-up-country__trigger"></span>
+                <span class="sign-up-country__trigger sign-up-country__trigger--light"></span>
                 Ireland</label
               >
             </li>
             <li class="sign-up-country__item">
               <input class="sign-up-country__checkbox visually-hidden" type="radio" name="country" id="italy" />
               <label class="sign-up-country__label sign-up-country__sex-label--checkbox" for="italy">
-                <span class="sign-up-country__trigger"></span>
+                <span class="sign-up-country__trigger sign-up-country__trigger--light"></span>
                 Italy</label
               >
             </li>
             <li class="sign-up-country__item">
               <input class="sign-up-country__checkbox visually-hidden" type="radio" name="country" id="latvia" />
               <label class="sign-up-country__label sign-up-country__sex-label--checkbox" for="latvia">
-                <span class="sign-up-country__trigger"></span>
+                <span class="sign-up-country__trigger sign-up-country__trigger--light"></span>
                 Latvia</label
               >
             </li>
             <li class="sign-up-country__item">
               <input class="sign-up-country__checkbox visually-hidden" type="radio" name="country" id="lithuania" />
               <label class="sign-up-country__label sign-up-country__sex-label--checkbox" for="lithuania">
-                <span class="sign-up-country__trigger"></span>
+                <span class="sign-up-country__trigger sign-up-country__trigger--light"></span>
                 Lithuania</label
               >
             </li>
             <li class="sign-up-country__item">
               <input class="sign-up-country__checkbox visually-hidden" type="radio" name="country" id="luxemburg" />
               <label class="sign-up-country__label sign-up-country__sex-label--checkbox" for="luxemburg">
-                <span class="sign-up-country__trigger"></span>
+                <span class="sign-up-country__trigger sign-up-country__trigger--light"></span>
                 Luxemburg</label
               >
             </li>

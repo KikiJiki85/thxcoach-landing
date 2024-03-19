@@ -25,8 +25,13 @@ $themes: (
     bg-footer: #293133,
     bg-special: #ffffff,
     bg-special2: #ffffff,
+    bg-signup: #ffffff,
+    bg-radio: #f8f8f8,
+    border-bottom: #f2f2f2,
     text: #293133,
     text-footer: #ffffff,
+    text-small: #797979,
+    text-terms: #505050,
     bgImage1200: url("../assets/img/landing-bcg-1200.webp"),
   ),
   dark: (
@@ -37,7 +42,12 @@ $themes: (
     bg-footer: #b2f042,
     bg-special: #1e1e1e,
     bg-special2: #3e3e3e,
+    bg-signup: #292929,
+    bg-radio: #3e3e3e,
+    border-bottom: rgba(255, 255, 255, 0.3),
     text: #ffffff,
+    text-small: #ffffff,
+    text-terms: #ffffff,
     text-footer: #293133,
     bgImage1200: url("../assets/img/landing-bcg-1200d.webp"),
   ),
@@ -52,7 +62,12 @@ $themes: (
     --bg-footer: #{map-get($map, bg-footer)};
     --bg-special: #{map-get($map, bg-special)};
     --bg-special2: #{map-get($map, bg-special2)};
+    --bg-signup: #{map-get($map, bg-signup)};
+    --bg-radio: #{map-get($map, bg-radio)};
+    --border-bottom: #{map-get($map, border-bottom)};
     --text: #{map-get($map, text)};
+    --text-terms: #{map-get($map, text-terms)};
+    --text-small: #{map-get($map, text-small)};
     --text-footer: #{map-get($map, text-footer)};
     --bgImage1200: #{map-get($map, bgImage1200)};
   }

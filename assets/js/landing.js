@@ -127,6 +127,44 @@ function init() {
         images[i].src = images[i].src.replace("dark-theme.svg", "light-theme.svg");
       }
     }
+
+    const signUpCheckboxes = document.querySelectorAll(".sign-up__trigger");
+    const signUp2Checkboxes = document.querySelectorAll(".sign-up-2__trigger");
+
+    for (let i = 0; i < signUpCheckboxes.length; i++) {
+      signUpCheckboxes[i].classList.toggle("sign-up__trigger--light");
+      signUpCheckboxes[i].classList.toggle("sign-up__trigger--dark");
+      signUp2Checkboxes[i].classList.toggle("sign-up-2__trigger--light");
+      signUp2Checkboxes[i].classList.toggle("sign-up-2__trigger--dark");
+    }
+
+    const signUpCountriesCheckboxes = document.querySelectorAll(".sign-up-country__trigger");
+
+    for (let i = 0; i < signUpCountriesCheckboxes.length; i++) {
+      signUpCountriesCheckboxes[i].classList.toggle("sign-up-country__trigger--light");
+      signUpCountriesCheckboxes[i].classList.toggle("sign-up-country__trigger--dark");
+    }
+
+    const closeBtn = document.querySelector(".sign-up__close-img");
+    if (closeBtn.src.endsWith("light-theme.svg")) {
+      closeBtn.src = closeBtn.src.replace("light-theme.svg", "dark-theme.svg");
+    } else if (closeBtn.src.endsWith("dark-theme.svg")) {
+      closeBtn.src = closeBtn.src.replace("dark-theme.svg", "light-theme.svg");
+    }
+
+    const backBtn2 = document.querySelector(".sign-up-2__back-img");
+    if (backBtn2.src.endsWith("light-theme.svg")) {
+      backBtn2.src = backBtn2.src.replace("light-theme.svg", "dark-theme.svg");
+    } else if (backBtn2.src.endsWith("dark-theme.svg")) {
+      backBtn2.src = backBtn2.src.replace("dark-theme.svg", "light-theme.svg");
+    }
+
+    const backCountryBtn = document.querySelector(".sign-up-country__back-img");
+    if (backCountryBtn.src.endsWith("light-theme.svg")) {
+      backCountryBtn.src = backCountryBtn.src.replace("light-theme.svg", "dark-theme.svg");
+    } else if (backCountryBtn.src.endsWith("dark-theme.svg")) {
+      backCountryBtn.src = backCountryBtn.src.replace("dark-theme.svg", "light-theme.svg");
+    }
   });
 }
 

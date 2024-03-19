@@ -7,7 +7,7 @@
   bottom: 0;
   max-width: 460px;
   min-width: 460px;
-  background-color: $bg-main;
+  background-color: var(--bg-signup);
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -24,7 +24,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 18px 16px;
-    border-bottom: 1px solid $bg-middle-light-grey;
+    border-bottom: 1px solid var(--border-bottom);
   }
 
   &__header {
@@ -38,10 +38,18 @@
     margin-right: 16px;
     margin-left: 16px;
     margin-top: auto;
+    background-color: var(--bg-btn);
+    color: var(--text-footer);
   }
 
   &__back {
     background-color: $bg-middle-light-grey;
+    padding: 0;
+  }
+
+  &__back-img {
+    width: 40px;
+    height: 40px;
   }
 
   &__crutch {
@@ -82,6 +90,9 @@
     border: none;
     outline: 0;
     outline-offset: 0;
+    background-color: var(--bg-signup);
+    color: var(--text);
+    transition: background-color 0.5s;
   }
 
   &__highlight {
@@ -98,7 +109,7 @@
   &__role {
     flex-grow: 1;
     min-height: 78px;
-    background-color: $bg-super-light-grey;
+    background-color: var(--bg-radio);
     border-radius: 25px;
   }
 
@@ -113,7 +124,7 @@
     transition: all 0.5s;
 
     &--picked {
-      color: $font-color-primary;
+      color: var(--text);
     }
 
     @media (hover: hover) {
@@ -139,12 +150,24 @@
   &__trigger {
     width: 16px;
     height: 16px;
-    background-image: url("../assets/img/radio-off.svg");
+  }
+
+  &__trigger--light {
+    background-image: url("../assets/img/radio-off-light-theme.svg");
     background-repeat: no-repeat;
   }
 
-  .sign-up-2__checkbox:not(:disabled):checked + label .sign-up-2__trigger {
-    background-image: url("../assets/img/radio-on.svg");
+  .sign-up-2__checkbox:not(:disabled):checked + label .sign-up-2__trigger--light {
+    background-image: url("../assets/img/radio-on-light-theme.svg");
+  }
+
+  &__trigger--dark {
+    background-image: url("../assets/img/radio-off-dark-theme.svg");
+    background-repeat: no-repeat;
+  }
+
+  .sign-up-2__checkbox:not(:disabled):checked + label .sign-up-2__trigger--dark {
+    background-image: url("../assets/img/radio-on-dark-theme.svg");
   }
 
   &__details-list {
@@ -159,7 +182,7 @@
     padding: 24px 0;
 
     &:not(:nth-last-child(3)) {
-      border-bottom: 1px solid $bg-middle-light-grey;
+      border-bottom: 1px solid var(--border-bottom);
     }
     &:nth-child(4) {
       padding-bottom: 0;
@@ -171,7 +194,7 @@
     font-size: 14px;
     line-height: 20px;
     padding-left: 36px;
-    color: $font-color-quaternary;
+    color: var(--text-small);
     cursor: pointer;
     position: relative;
     user-select: none;
@@ -199,7 +222,7 @@
   }
 
   &__terms-link {
-    color: $font-color-tertiary;
+    color: var(--text-terms);
     text-decoration: underline;
   }
 
