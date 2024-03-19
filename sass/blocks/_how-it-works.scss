@@ -52,6 +52,10 @@
     padding: 48px 32px;
     border-radius: 32px;
     background-color: var(--bg-special);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
     &--dark {
       background-color: var(--bg-btn);
       color: var(--text-footer);
@@ -67,6 +71,7 @@
 
   &__benefit-text {
     font-weight: 500;
+    margin: 0;
   }
 
   &__features {
@@ -155,6 +160,14 @@
     padding: 0 40px;
     gap: 40px;
 
+    &__benefits {
+      gap: 32px;
+    }
+
+    &__features-list {
+      column-gap: 27px;
+    }
+
     &__benefit-header {
       font-size: 30px;
       line-height: 37px;
@@ -183,6 +196,51 @@
     &__header {
       font-size: 50px;
       line-height: 61px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .how-it-works {
+    &__benefit {
+      padding: 32px;
+    }
+
+    &__feature {
+      padding: 24px 32px;
+    }
+
+    &__bottom-text {
+      width: 100%;
+    }
+
+    &__register {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 849px) {
+  .how-it-works {
+    &__features-list {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    &__benefits {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .how-it-works {
+    &__header {
+      font-size: 40px;
+      line-height: 49px;
+    }
+
+    &__switcher {
+      gap: 0;
     }
   }
 }

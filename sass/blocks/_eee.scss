@@ -28,9 +28,31 @@
 @media (max-width: 1199px) {
   .eee {
     padding: 0 40px;
+
     &__header {
       font-size: 50px;
       line-height: 61px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .eee {
+    &__text {
+      width: 100%;
+    }
+
+    &__activities {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .eee {
+    &__header {
+      font-size: 40px;
+      line-height: 49px;
     }
   }
 }

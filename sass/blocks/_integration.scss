@@ -36,3 +36,12 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .integration {
+    &__header {
+      font-size: 40px;
+      line-height: 49px;
+    }
+  }
+}

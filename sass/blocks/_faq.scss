@@ -75,3 +75,12 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .faq {
+    &__header {
+      font-size: 40px;
+      line-height: 49px;
+    }
+  }
+}

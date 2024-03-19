@@ -799,25 +799,19 @@ img {
     padding-left: 40px;
   }
   .landing-header__right-side {
-    right: 60px;
+    gap: 60px;
   }
 }
 @media (max-width: 991px) {
-  .landing-header {
-    padding-right: 40px;
-    padding-left: 40px;
-  }
   .landing-header__right-side {
-    right: 40px;
+    gap: 20px;
+    right: 20px;
   }
 }
 @media (max-width: 767px) {
   .landing-header {
     padding-right: 32px;
     padding-left: 32px;
-  }
-  .landing-header__right-side {
-    right: 32px;
   }
 }
 @media (max-width: 419px) {
@@ -839,6 +833,11 @@ img {
 @media (max-width: 1199px) {
   .landing-main {
     gap: 120px;
+  }
+}
+@media (max-width: 767px) {
+  .landing-main {
+    gap: 100px;
   }
 }
 .cta {
@@ -908,6 +907,9 @@ img {
     background-size: 463px 774px;
     background-position: right bottom;
   }
+  .cta__left-wrapper {
+    padding-top: 95px;
+  }
 }
 @media (max-width: 767px) {
   .cta {
@@ -915,41 +917,26 @@ img {
     background-size: 375px 673px;
     background-position: right top;
   }
-  .landing-main {
-    padding-right: 32px;
-    padding-left: 32px;
+  .cta__header {
+    font-size: 40px;
+    line-height: 49px;
   }
-  .landing-main__cta {
-    margin-top: 92px;
+  .cta__advantage {
+    font-size: 14px;
+    line-height: 20px;
   }
-  .landing-main__additional-info {
-    margin-top: 112px;
+  .cta__additional-info {
+    font-size: 30px;
+    line-height: 37px;
   }
-  .landing-main__apps-wrapper {
-    flex-direction: column;
-    gap: 15px;
+  .cta__left-wrapper {
+    padding-top: 60px;
+    width: 60%;
   }
 }
-@media (max-width: 419px) {
-  .landing-main {
-    padding-right: 16px;
-    padding-left: 16px;
-    width: 65%;
-  }
-  .landing-main__cta {
-    font-size: 26px;
-    line-height: 38px;
-    margin-top: 70px;
-  }
-  .landing-main__advantage {
-    font-size: 16px;
-    line-height: 26px;
-  }
-  .landing-main__coming-soon {
-    margin-top: 95px;
-  }
-  .landing-main__additional-info {
-    margin-top: 95px;
+@media (max-width: 428px) {
+  .cta__left-wrapper {
+    padding-top: 50px;
   }
 }
 .eee {
@@ -983,6 +970,20 @@ img {
   .eee__header {
     font-size: 50px;
     line-height: 61px;
+  }
+}
+@media (max-width: 991px) {
+  .eee__text {
+    width: 100%;
+  }
+  .eee__activities {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 767px) {
+  .eee__header {
+    font-size: 40px;
+    line-height: 49px;
   }
 }
 .integration {
@@ -1020,6 +1021,12 @@ img {
   .integration__header {
     font-size: 50px;
     line-height: 61px;
+  }
+}
+@media (max-width: 767px) {
+  .integration__header {
+    font-size: 40px;
+    line-height: 49px;
   }
 }
 .how-it-works {
@@ -1069,6 +1076,9 @@ img {
   padding: 48px 32px;
   border-radius: 32px;
   background-color: var(--bg-special);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 .how-it-works__benefit--dark {
   background-color: var(--bg-btn);
@@ -1082,6 +1092,7 @@ img {
 }
 .how-it-works__benefit-text {
   font-weight: 500;
+  margin: 0;
 }
 .how-it-works__features {
   display: flex;
@@ -1161,6 +1172,13 @@ img {
     padding: 0 40px;
     gap: 40px;
   }
+  .how-it-works__benefits {
+    gap: 32px;
+  }
+  .how-it-works__features-list {
+    -moz-column-gap: 27px;
+         column-gap: 27px;
+  }
   .how-it-works__benefit-header {
     font-size: 30px;
     line-height: 37px;
@@ -1183,6 +1201,37 @@ img {
   .how-it-works__header {
     font-size: 50px;
     line-height: 61px;
+  }
+}
+@media (max-width: 991px) {
+  .how-it-works__benefit {
+    padding: 32px;
+  }
+  .how-it-works__feature {
+    padding: 24px 32px;
+  }
+  .how-it-works__bottom-text {
+    width: 100%;
+  }
+  .how-it-works__register {
+    width: 100%;
+  }
+}
+@media (max-width: 849px) {
+  .how-it-works__features-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .how-it-works__benefits {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  .how-it-works__header {
+    font-size: 40px;
+    line-height: 49px;
+  }
+  .how-it-works__switcher {
+    gap: 0;
   }
 }
 .faq {
@@ -1252,6 +1301,12 @@ img {
   .faq__header {
     font-size: 50px;
     line-height: 61px;
+  }
+}
+@media (max-width: 767px) {
+  .faq__header {
+    font-size: 40px;
+    line-height: 49px;
   }
 }
 .landing-footer {

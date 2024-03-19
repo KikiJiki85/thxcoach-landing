@@ -10,3 +10,9 @@
     gap: 120px;
   }
 }
+
+@media (max-width: 767px) {
+  .landing-main {
+    gap: 100px;
+  }
+}
