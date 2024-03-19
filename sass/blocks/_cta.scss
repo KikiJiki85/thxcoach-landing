@@ -55,9 +55,10 @@
 
 @media (max-width: 1199px) {
   .cta {
-    background-image: url("../assets/img/landing-bcg-1199.webp");
+    background-image: var(--bgImage992);
     background-size: 559px 774px;
     background-position: right top;
+    padding: 0 40px;
 
     &__header {
       font-size: 50px;
@@ -67,14 +68,20 @@
 }
 
 @media (max-width: 991px) {
-  .landing-main {
-    width: 60%;
-    padding-right: 40px;
-    padding-left: 40px;
+  .cta {
+    background-image: var(--bgImage768);
+    background-size: 463px 774px;
+    background-position: right bottom;
   }
 }
 
 @media (max-width: 767px) {
+  .cta {
+    background-image: var(--bgImage360);
+    background-size: 375px 673px;
+    background-position: right top;
+  }
+
   .landing-main {
     padding-right: 32px;
     padding-left: 32px;

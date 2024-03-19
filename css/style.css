@@ -388,6 +388,9 @@ template {
   --text-small: #797979;
   --text-footer: #ffffff;
   --bgImage1200: url("../assets/img/landing-bcg-1200.webp");
+  --bgImage992: url("../assets/img/landing-bcg-992.webp");
+  --bgImage768: url("../assets/img/landing-bcg-768.webp");
+  --bgImage360: url("../assets/img/landing-bcg-360.webp");
 }
 
 .theme-dark {
@@ -406,6 +409,9 @@ template {
   --text-small: #ffffff;
   --text-footer: #293133;
   --bgImage1200: url("../assets/img/landing-bcg-1200d.webp");
+  --bgImage992: url("../assets/img/landing-bcg-992d.webp");
+  --bgImage768: url("../assets/img/landing-bcg-768d.webp");
+  --bgImage360: url("../assets/img/landing-bcg-360d.webp");
 }
 
 *,
@@ -789,8 +795,8 @@ img {
 
 @media (max-width: 1199px) {
   .landing-header {
-    padding-right: 60px;
-    padding-left: 60px;
+    padding-right: 40px;
+    padding-left: 40px;
   }
   .landing-header__right-side {
     right: 60px;
@@ -886,9 +892,10 @@ img {
 
 @media (max-width: 1199px) {
   .cta {
-    background-image: url("../assets/img/landing-bcg-1199.webp");
+    background-image: var(--bgImage992);
     background-size: 559px 774px;
     background-position: right top;
+    padding: 0 40px;
   }
   .cta__header {
     font-size: 50px;
@@ -896,13 +903,18 @@ img {
   }
 }
 @media (max-width: 991px) {
-  .landing-main {
-    width: 60%;
-    padding-right: 40px;
-    padding-left: 40px;
+  .cta {
+    background-image: var(--bgImage768);
+    background-size: 463px 774px;
+    background-position: right bottom;
   }
 }
 @media (max-width: 767px) {
+  .cta {
+    background-image: var(--bgImage360);
+    background-size: 375px 673px;
+    background-position: right top;
+  }
   .landing-main {
     padding-right: 32px;
     padding-left: 32px;
@@ -965,6 +977,9 @@ img {
 }
 
 @media (max-width: 1199px) {
+  .eee {
+    padding: 0 40px;
+  }
   .eee__header {
     font-size: 50px;
     line-height: 61px;
@@ -999,6 +1014,9 @@ img {
 }
 
 @media (max-width: 1199px) {
+  .integration {
+    padding: 0 40px;
+  }
   .integration__header {
     font-size: 50px;
     line-height: 61px;
@@ -1139,6 +1157,29 @@ img {
 }
 
 @media (max-width: 1199px) {
+  .how-it-works {
+    padding: 0 40px;
+    gap: 40px;
+  }
+  .how-it-works__benefit-header {
+    font-size: 30px;
+    line-height: 37px;
+  }
+  .how-it-works__benefit-text {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .how-it-works__features-text {
+    width: 82%;
+  }
+  .how-it-works__bottom-text {
+    margin-bottom: 0;
+    width: 82%;
+  }
+  .how-it-works__athletes, .how-it-works__coaches {
+    font-size: 40px;
+    line-height: 49px;
+  }
   .how-it-works__header {
     font-size: 50px;
     line-height: 61px;
@@ -1205,6 +1246,9 @@ img {
 }
 
 @media (max-width: 1199px) {
+  .faq {
+    padding: 0 40px;
+  }
   .faq__header {
     font-size: 50px;
     line-height: 61px;
@@ -1245,8 +1289,8 @@ img {
 
 @media (max-width: 1199px) {
   .landing-footer {
-    padding-right: 60px;
-    padding-left: 60px;
+    padding-right: 40px;
+    padding-left: 40px;
   }
 }
 @media (max-width: 991px) {

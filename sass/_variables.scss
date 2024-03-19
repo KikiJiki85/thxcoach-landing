@@ -33,6 +33,9 @@ $themes: (
     text-small: #797979,
     text-terms: #505050,
     bgImage1200: url("../assets/img/landing-bcg-1200.webp"),
+    bgImage992: url("../assets/img/landing-bcg-992.webp"),
+    bgImage768: url("../assets/img/landing-bcg-768.webp"),
+    bgImage360: url("../assets/img/landing-bcg-360.webp"),
   ),
   dark: (
     bg-header: #b2f042,
@@ -50,6 +53,9 @@ $themes: (
     text-terms: #ffffff,
     text-footer: #293133,
     bgImage1200: url("../assets/img/landing-bcg-1200d.webp"),
+    bgImage992: url("../assets/img/landing-bcg-992d.webp"),
+    bgImage768: url("../assets/img/landing-bcg-768d.webp"),
+    bgImage360: url("../assets/img/landing-bcg-360d.webp"),
   ),
 );
 
@@ -70,5 +76,8 @@ $themes: (
     --text-small: #{map-get($map, text-small)};
     --text-footer: #{map-get($map, text-footer)};
     --bgImage1200: #{map-get($map, bgImage1200)};
+    --bgImage992: #{map-get($map, bgImage992)};
+    --bgImage768: #{map-get($map, bgImage768)};
+    --bgImage360: #{map-get($map, bgImage360)};
   }
 }

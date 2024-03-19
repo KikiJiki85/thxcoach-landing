@@ -152,6 +152,34 @@
 
 @media (max-width: 1199px) {
   .how-it-works {
+    padding: 0 40px;
+    gap: 40px;
+
+    &__benefit-header {
+      font-size: 30px;
+      line-height: 37px;
+    }
+
+    &__benefit-text {
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+    &__features-text {
+      width: 82%;
+    }
+
+    &__bottom-text {
+      margin-bottom: 0;
+      width: 82%;
+    }
+
+    &__athletes,
+    &__coaches {
+      font-size: 40px;
+      line-height: 49px;
+    }
+
     &__header {
       font-size: 50px;
       line-height: 61px;
