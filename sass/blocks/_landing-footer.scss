@@ -64,6 +64,21 @@
   .landing-footer {
     padding-right: 32px;
     padding-left: 32px;
+
+    &__apps-wrapper {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 530px) {
+  .landing-footer {
+    gap: 32px;
+    flex-direction: column-reverse;
+    &__right-wrapper {
+      margin: 0;
+      align-items: flex-start;
+    }
   }
 }
 

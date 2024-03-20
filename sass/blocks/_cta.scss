@@ -81,7 +81,7 @@
 
 @media (max-width: 767px) {
   .cta {
-    background-image: var(--bgImage360);
+    background-image: var(--bgImage767);
     background-size: 375px 673px;
     background-position: right top;
 
@@ -103,6 +103,27 @@
     &__left-wrapper {
       padding-top: 60px;
       width: 60%;
+    }
+  }
+}
+
+@media (max-width: 530px) {
+  .cta {
+    background-image: var(--bgImage428);
+    background-size: 211px 456px;
+    background-position: right top;
+
+    &__header {
+      font-size: 30px;
+      line-height: 37px;
+    }
+
+    &__sign-in {
+      width: 100%;
+    }
+
+    &__apps-wrapper {
+      flex-direction: column;
     }
   }
 }

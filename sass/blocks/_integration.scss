@@ -43,5 +43,22 @@
       font-size: 40px;
       line-height: 49px;
     }
+
+    &__images {
+      column-gap: 16px;
+    }
+  }
+}
+
+@media (max-width: 530px) {
+  .integration {
+    &__images {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__header {
+      font-size: 34px;
+      line-height: 41px;
+    }
   }
 }

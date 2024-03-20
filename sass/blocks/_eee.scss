@@ -56,3 +56,15 @@
     }
   }
 }
+
+@media (max-width: 530px) {
+  .eee {
+    &__activities {
+      gap: 24px;
+    }
+    &__header {
+      font-size: 34px;
+      line-height: 41px;
+    }
+  }
+}

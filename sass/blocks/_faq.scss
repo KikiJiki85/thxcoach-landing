@@ -84,3 +84,12 @@
     }
   }
 }
+
+@media (max-width: 530px) {
+  .faq {
+    &__header {
+      font-size: 34px;
+      line-height: 41px;
+    }
+  }
+}

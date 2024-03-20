@@ -35,7 +35,8 @@ $themes: (
     bgImage1200: url("../assets/img/landing-bcg-1200.webp"),
     bgImage992: url("../assets/img/landing-bcg-992.webp"),
     bgImage768: url("../assets/img/landing-bcg-768.webp"),
-    bgImage360: url("../assets/img/landing-bcg-360.webp"),
+    bgImage767: url("../assets/img/landing-bcg-767.webp"),
+    bgImage428: url("../assets/img/landing-bcg-428.webp"),
   ),
   dark: (
     bg-header: #b2f042,
@@ -55,7 +56,7 @@ $themes: (
     bgImage1200: url("../assets/img/landing-bcg-1200d.webp"),
     bgImage992: url("../assets/img/landing-bcg-992d.webp"),
     bgImage768: url("../assets/img/landing-bcg-768d.webp"),
-    bgImage360: url("../assets/img/landing-bcg-360d.webp"),
+    bgImage428: url("../assets/img/landing-bcg-428d.webp"),
   ),
 );
 
@@ -78,6 +79,7 @@ $themes: (
     --bgImage1200: #{map-get($map, bgImage1200)};
     --bgImage992: #{map-get($map, bgImage992)};
     --bgImage768: #{map-get($map, bgImage768)};
-    --bgImage360: #{map-get($map, bgImage360)};
+    --bgImage767: #{map-get($map, bgImage767)};
+    --bgImage428: #{map-get($map, bgImage428)};
   }
 }
