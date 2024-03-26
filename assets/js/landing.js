@@ -101,15 +101,15 @@ function init() {
   forAthletesBtn.addEventListener("click", () => {
     forCoachesBtn.classList.remove("how-it-works__coaches--active");
     forAthletesBtn.classList.add("how-it-works__athletes--active");
-    coachesBlock.classList.add("visually-hidden");
-    athletesBlock.classList.remove("visually-hidden");
+    coachesBlock.classList.remove("how-it-works__coaches-block--show");
+    athletesBlock.classList.add("how-it-works__athletes-block--show");
   });
 
   forCoachesBtn.addEventListener("click", () => {
     forAthletesBtn.classList.remove("how-it-works__athletes--active");
     forCoachesBtn.classList.add("how-it-works__coaches--active");
-    athletesBlock.classList.add("visually-hidden");
-    coachesBlock.classList.remove("visually-hidden");
+    coachesBlock.classList.add("how-it-works__coaches-block--show");
+    athletesBlock.classList.remove("how-it-works__athletes-block--show");
   });
 
   const themeSwitcher = document.querySelector(".landing-header__label--checkbox");

@@ -673,7 +673,8 @@ img {
   background-color: var(--bg-header);
   transition: background-color 0.5s;
   padding: 23px 120px;
-  position: relative;
+  position: fixed;
+  width: 100%;
 }
 .landing-header__left-side {
   display: flex;
@@ -918,7 +919,7 @@ img {
 }
 .cta__left-wrapper {
   width: 50%;
-  padding-top: 120px;
+  padding-top: 223px;
 }
 .cta__app-img {
   max-width: 100%;
@@ -978,7 +979,7 @@ img {
     padding-bottom: 95px;
   }
   .cta__left-wrapper {
-    padding-top: 95px;
+    padding-top: 198px;
   }
 }
 @media (max-width: 767px) {
@@ -1001,7 +1002,7 @@ img {
     line-height: 37px;
   }
   .cta__left-wrapper {
-    padding-top: 60px;
+    padding-top: 163px;
     width: 60%;
   }
 }
@@ -1025,7 +1026,7 @@ img {
     padding: 0 16px;
   }
   .cta__left-wrapper {
-    padding-top: 50px;
+    padding-top: 153px;
     width: 70%;
   }
 }
@@ -1194,9 +1195,12 @@ img {
   border-radius: 64px;
 }
 .how-it-works__coaches-block, .how-it-works__athletes-block {
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 64px;
+}
+.how-it-works__coaches-block--show, .how-it-works__athletes-block--show {
+  display: flex;
 }
 .how-it-works__benefits {
   display: grid;
@@ -1396,6 +1400,9 @@ img {
   .how-it-works__register-text {
     font-size: 26px;
     line-height: 36px;
+  }
+  .how-it-works__benefits {
+    gap: 16px;
   }
 }
 @media (max-width: 428px) {

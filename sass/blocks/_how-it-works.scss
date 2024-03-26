@@ -37,9 +37,13 @@
 
   &__coaches-block,
   &__athletes-block {
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 64px;
+
+    &--show {
+      display: flex;
+    }
   }
 
   &__benefits {
@@ -285,6 +289,10 @@
     &__register-text {
       font-size: 26px;
       line-height: 36px;
+    }
+
+    &__benefits {
+      gap: 16px;
     }
   }
 }

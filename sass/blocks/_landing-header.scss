@@ -5,7 +5,8 @@
   background-color: var(--bg-header);
   transition: background-color 0.5s;
   padding: 23px 120px;
-  position: relative;
+  position: fixed;
+  width: 100%;
 
   &__left-side {
     display: flex;
