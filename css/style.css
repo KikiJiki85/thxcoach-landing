@@ -899,6 +899,12 @@ img {
     gap: 120px;
   }
 }
+@media (max-width: 530px) {
+  .landing-main {
+    gap: 110px;
+    padding-bottom: 60px;
+  }
+}
 .cta {
   background-image: var(--bgImage1200);
   background-size: 900px 884px;
@@ -908,11 +914,15 @@ img {
   background-position: right bottom;
   padding-left: 120px;
   padding-right: 120px;
+  padding-bottom: 120px;
 }
 .cta__left-wrapper {
   width: 50%;
   padding-top: 120px;
-  padding-bottom: 62px;
+}
+.cta__app-img {
+  max-width: 100%;
+  height: 68px;
 }
 .cta__header {
   font-size: 60px;
@@ -965,6 +975,7 @@ img {
     background-image: var(--bgImage768);
     background-size: 463px 774px;
     background-position: right bottom;
+    padding-bottom: 95px;
   }
   .cta__left-wrapper {
     padding-top: 95px;
@@ -975,6 +986,7 @@ img {
     background-image: var(--bgImage767);
     background-size: 375px 673px;
     background-position: right top;
+    padding-bottom: 70px;
   }
   .cta__header {
     font-size: 40px;
@@ -1006,13 +1018,15 @@ img {
   .cta__sign-in {
     width: 100%;
   }
-  .cta__apps-wrapper {
-    flex-direction: column;
-  }
 }
 @media (max-width: 428px) {
+  .cta {
+    padding-bottom: 0px;
+    padding: 0 16px;
+  }
   .cta__left-wrapper {
     padding-top: 50px;
+    width: 70%;
   }
 }
 .eee {
@@ -1036,7 +1050,15 @@ img {
 }
 .eee__activities {
   display: flex;
+  align-items: center;
   gap: 48px;
+}
+.eee__img {
+  max-width: 100%;
+  height: 116px;
+}
+.eee__img:nth-of-type(2) {
+  height: 140px;
 }
 
 @media (max-width: 1199px) {
@@ -1052,9 +1074,6 @@ img {
   .eee__text {
     width: 100%;
   }
-  .eee__activities {
-    flex-wrap: wrap;
-  }
 }
 @media (max-width: 767px) {
   .eee__header {
@@ -1069,6 +1088,14 @@ img {
   .eee__header {
     font-size: 34px;
     line-height: 41px;
+  }
+  .eee__img:last-of-type {
+    display: none;
+  }
+}
+@media (max-width: 428px) {
+  .eee {
+    padding: 0 16px;
   }
 }
 .integration {
@@ -1121,10 +1148,16 @@ img {
 @media (max-width: 530px) {
   .integration__images {
     grid-template-columns: repeat(2, 1fr);
+    row-gap: 16px;
   }
   .integration__header {
     font-size: 34px;
     line-height: 41px;
+  }
+}
+@media (max-width: 428px) {
+  .integration {
+    padding: 0 16px;
   }
 }
 .how-it-works {
@@ -1333,18 +1366,21 @@ img {
   }
 }
 @media (max-width: 530px) {
-  .how-it-works__switcher {
-    flex-direction: column;
+  .how-it-works {
+    gap: 24px;
   }
   .how-it-works__athletes, .how-it-works__coaches {
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 20px;
+    line-height: 24px;
   }
   .how-it-works__sign-in {
     width: 100%;
   }
   .how-it-works__features-text {
     width: 100%;
+  }
+  .how-it-works__features-list {
+    row-gap: 16px;
   }
   .how-it-works__switcher {
     align-items: stretch;
@@ -1360,6 +1396,11 @@ img {
   .how-it-works__register-text {
     font-size: 26px;
     line-height: 36px;
+  }
+}
+@media (max-width: 428px) {
+  .how-it-works {
+    padding: 0 16px;
   }
 }
 .faq {
@@ -1399,6 +1440,9 @@ img {
 }
 .faq__icon {
   transition: rotate 0.3s;
+  width: 17px;
+  height: 11px;
+  flex-shrink: 0;
 }
 .faq__trigger {
   display: flex;
@@ -1411,6 +1455,7 @@ img {
   font-size: 24px;
   line-height: 30px;
   font-weight: 600;
+  padding-right: 5px;
 }
 .faq__content {
   display: none;
@@ -1438,9 +1483,18 @@ img {
   }
 }
 @media (max-width: 530px) {
+  .faq {
+    gap: 32px;
+    margin-top: -10px;
+  }
   .faq__header {
     font-size: 34px;
     line-height: 41px;
+  }
+}
+@media (max-width: 428px) {
+  .faq {
+    padding: 0 16px;
   }
 }
 .landing-footer {
@@ -1475,6 +1529,10 @@ img {
   align-items: flex-end;
   margin-top: 44px;
 }
+.landing-footer__app-img {
+  max-width: 100%;
+  height: 68px;
+}
 
 @media (max-width: 1199px) {
   .landing-footer {
@@ -1505,6 +1563,12 @@ img {
   .landing-footer__right-wrapper {
     margin: 0;
     align-items: flex-start;
+  }
+  .landing-footer__left-wrapper {
+    width: 100%;
+  }
+  .landing-footer__apps-wrapper {
+    flex-direction: row;
   }
 }
 @media (max-width: 419px) {

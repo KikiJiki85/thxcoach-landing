@@ -37,6 +37,9 @@
 
   &__icon {
     transition: rotate 0.3s;
+    width: 17px;
+    height: 11px;
+    flex-shrink: 0;
   }
 
   &__trigger {
@@ -51,6 +54,7 @@
     font-size: 24px;
     line-height: 30px;
     font-weight: 600;
+    padding-right: 5px;
   }
 
   &__content {
@@ -87,9 +91,17 @@
 
 @media (max-width: 530px) {
   .faq {
+    gap: 32px;
+    margin-top: -10px;
     &__header {
       font-size: 34px;
       line-height: 41px;
     }
+  }
+}
+
+@media (max-width: 428px) {
+  .faq {
+    padding: 0 16px;
   }
 }
