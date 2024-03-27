@@ -166,6 +166,20 @@ function init() {
       backCountryBtn.src = backCountryBtn.src.replace("dark-theme.svg", "light-theme.svg");
     }
   });
+
+  const burgerMobile = document.querySelector(".landing-header__burger-mobile");
+  const subMenu = document.querySelector(".landing-header__sub-menu");
+  const subMenuFaq = document.querySelector(".landing-header__sub-menu-faq");
+  const subMenuHow = document.querySelector(".landing-header__sub-menu-how");
+  burgerMobile.addEventListener("click", () => {
+    subMenu.classList.toggle("landing-header__sub-menu--show");
+  });
+  subMenuFaq.addEventListener("click", () => {
+    subMenu.classList.remove("landing-header__sub-menu--show");
+  });
+  subMenuHow.addEventListener("click", () => {
+    subMenu.classList.remove("landing-header__sub-menu--show");
+  });
 }
 
 document.addEventListener("DOMContentLoaded", init);

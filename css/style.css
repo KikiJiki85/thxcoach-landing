@@ -843,6 +843,42 @@ img {
   display: none;
   margin-top: 5px;
 }
+.landing-header__sub-menu {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: var(--bg-special);
+  transform: translateY(-100%);
+  transition: all 0.5s;
+  opacity: 0;
+}
+.landing-header__sub-menu--show {
+  transform: translateY(100%);
+  opacity: 1;
+}
+.landing-header__sub-menu-sign-up {
+  margin-left: auto;
+  background-color: var(--bg-btn);
+  color: var(--text-footer);
+}
+.landing-header__sub-menu-how, .landing-header__sub-menu-faq {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+  color: var(--text);
+}
+.landing-header__sub-menu-link {
+  color: var(--text);
+}
+.landing-header__sub-menu-arrow {
+  fill: var(--text);
+}
 
 @media (max-width: 1199px) {
   .landing-header {
@@ -854,6 +890,9 @@ img {
   }
 }
 @media (max-width: 991px) {
+  .landing-header__sub-menu-link {
+    display: none;
+  }
   .landing-header__right-side {
     gap: 20px;
     right: 20px;
@@ -876,7 +915,7 @@ img {
     gap: 16px;
   }
 }
-@media (max-width: 428px) {
+@media (max-width: 432px) {
   .landing-header {
     padding-right: 16px;
     padding-left: 16px;
@@ -886,6 +925,20 @@ img {
   }
   .landing-header__right-side {
     right: 16px;
+  }
+  .landing-header__sub-menu {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .landing-header__sub-menu--show {
+    transform: translateY(52%);
+  }
+  .landing-header__sub-menu-link {
+    display: flex;
+  }
+  .landing-header__sub-menu-sign-up {
+    margin-left: 0;
   }
 }
 .landing-main {
@@ -1587,8 +1640,8 @@ img {
 .sign-up {
   position: fixed;
   overflow-y: scroll;
-  z-index: 10;
-  top: 96px;
+  z-index: 15;
+  top: 103px;
   right: 0;
   bottom: 0;
   max-width: 460px;
@@ -1719,8 +1772,8 @@ img {
 .sign-up-2 {
   position: fixed;
   overflow-y: scroll;
-  z-index: 10;
-  top: 96px;
+  z-index: 15;
+  top: 103px;
   right: 0;
   bottom: 0;
   max-width: 460px;
@@ -1939,8 +1992,8 @@ img {
 .sign-up-country {
   position: fixed;
   overflow-y: scroll;
-  z-index: 10;
-  top: 96px;
+  z-index: 15;
+  top: 103px;
   right: 0;
   bottom: 0;
   max-width: 460px;
