@@ -2,6 +2,7 @@ import { slideUp, slideDown } from "./animation.js";
 
 function init() {
   const landingBody = document.querySelector(".landing__body");
+  const landingHeader = document.querySelector(".landing-header");
   const languageSwitch = document.querySelector(".landing-header__language");
   const linkSecond = document.querySelector(".landing-header__link-second");
   const arrow = document.querySelector(".landing-header__arrow");
@@ -171,14 +172,29 @@ function init() {
   const subMenu = document.querySelector(".landing-header__sub-menu");
   const subMenuFaq = document.querySelector(".landing-header__sub-menu-faq");
   const subMenuHow = document.querySelector(".landing-header__sub-menu-how");
+  const faqAnchor = document.getElementById("faq");
+  const howAnchor = document.getElementById("how-it-works");
+  const offset = 100;
+
   burgerMobile.addEventListener("click", () => {
     subMenu.classList.toggle("landing-header__sub-menu--show");
+    landingHeader.classList.toggle("menu-toggle");
   });
   subMenuFaq.addEventListener("click", () => {
     subMenu.classList.remove("landing-header__sub-menu--show");
+    const rect = faqAnchor.getBoundingClientRect();
+    window.scrollTo({
+      top: rect.top + window.scrollY - offset,
+      behavior: "smooth",
+    });
   });
   subMenuHow.addEventListener("click", () => {
     subMenu.classList.remove("landing-header__sub-menu--show");
+    const rect = howAnchor.getBoundingClientRect();
+    window.scrollTo({
+      top: rect.top + window.scrollY - offset,
+      behavior: "smooth",
+    });
   });
 }
 

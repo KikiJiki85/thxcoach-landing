@@ -190,15 +190,15 @@
   }
 
   &.menu-toggle {
-    .page-header__burger-line:nth-child(1) {
+    .landing-header__burger-line:nth-child(1) {
       opacity: 0;
     }
 
-    .page-header__burger-line:nth-child(2) {
+    .landing-header__burger-line:nth-child(2) {
       transform: rotate(45deg);
     }
 
-    .page-header__burger-line:nth-child(3) {
+    .landing-header__burger-line:nth-child(3) {
       transform: rotate(135deg);
     }
   }

@@ -11,6 +11,10 @@
     gap: 24px;
   }
 
+  .faq__icon-arrow {
+    fill: var(--text);
+  }
+
   &__item {
     cursor: pointer;
     background-color: var(--bg-special);
@@ -23,7 +27,7 @@
         rotate: 180deg;
       }
       .faq__icon-arrow {
-        fill: $bg-main;
+        fill: var(--text-footer);
       }
     }
   }
