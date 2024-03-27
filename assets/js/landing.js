@@ -182,6 +182,7 @@ function init() {
   });
   subMenuFaq.addEventListener("click", () => {
     subMenu.classList.remove("landing-header__sub-menu--show");
+    landingHeader.classList.remove("menu-toggle");
     const rect = faqAnchor.getBoundingClientRect();
     window.scrollTo({
       top: rect.top + window.scrollY - offset,
@@ -190,6 +191,7 @@ function init() {
   });
   subMenuHow.addEventListener("click", () => {
     subMenu.classList.remove("landing-header__sub-menu--show");
+    landingHeader.classList.remove("menu-toggle");
     const rect = howAnchor.getBoundingClientRect();
     window.scrollTo({
       top: rect.top + window.scrollY - offset,
