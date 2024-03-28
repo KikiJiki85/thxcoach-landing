@@ -27,11 +27,11 @@ function init() {
     arrow.classList.toggle("landing-header__arrow--rotate");
   });
 
-  signUpBtn.addEventListener("click", () => {
-    signUpModal.classList.add("sign-up--show");
-    overlay.classList.add("overlay--show");
-    landingBody.classList.add("no-scroll");
-  });
+  // signUpBtn.addEventListener("click", () => {
+  //   signUpModal.classList.add("sign-up--show");
+  //   overlay.classList.add("overlay--show");
+  //   landingBody.classList.add("no-scroll");
+  // });
 
   signUpCloseBtn.addEventListener("click", () => {
     signUpModal.classList.remove("sign-up--show");
