@@ -412,7 +412,7 @@ template {
   --bgImage1200: url("../assets/img/landing-bcg-1200d.webp");
   --bgImage992: url("../assets/img/landing-bcg-992d.webp");
   --bgImage768: url("../assets/img/landing-bcg-768d.webp");
-  --bgImage767: ;
+  --bgImage767: url("../assets/img/landing-bcg-767d.webp");
   --bgImage428: url("../assets/img/landing-bcg-428d.webp");
 }
 
